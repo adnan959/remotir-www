@@ -1,0 +1,348 @@
+/* =============================================================================
+   REMOTIR WWW - PMF FAILURE PAGE STYLES
+   =============================================================================
+   Styles specific to the PMF Failure page sections.
+   ============================================================================= */
+
+/* =============================================================================
+   PMF INDICATORS SECTION
+   ============================================================================= */
+.pmf-indicators {
+    padding: var(--section-padding) 0;
+}
+
+.pmf-indicators__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    margin-bottom: var(--space-12);
+}
+
+.pmf-indicators__title {
+    flex: 1;
+    font-size: 4.25rem;
+    font-weight: var(--font-semibold);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+}
+
+.pmf-indicators__subtitle {
+    flex: 1;
+    font-size: var(--text-2xl);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+}
+
+/* =============================================================================
+   INDICATOR CARDS
+   ============================================================================= */
+.pmf-indicators__cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    margin-bottom: var(--space-12);
+}
+
+.indicator-card {
+    display: flex;
+    background-color: #090952;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.indicator-card__header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-6);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    min-height: 280px;
+}
+
+.indicator-card__icon {
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+}
+
+.indicator-card__icon--tall {
+    width: 130px;
+}
+
+.indicator-card__title {
+    font-size: var(--text-3xl);
+    font-weight: var(--font-bold);
+    line-height: 1.3;
+    color: var(--color-text-primary);
+}
+
+.indicator-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    padding: var(--space-6);
+}
+
+.indicator-card__content-header {
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    line-height: 1.3;
+    color: var(--color-text-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.indicator-card__content-text {
+    font-size: var(--text-lg);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+}
+
+.indicator-card__content-text p + p {
+    margin-top: var(--space-4);
+}
+
+/* =============================================================================
+   CTA SECTION
+   ============================================================================= */
+.pmf-indicators__cta {
+    display: flex;
+}
+
+.pmf-indicators__cta .btn {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-lg);
+    line-height: 28px;
+}
+
+/* =============================================================================
+   PMF HARDEST PROBLEM SECTION
+   ============================================================================= */
+.pmf-hardest {
+    padding: var(--section-padding) 0;
+}
+
+.pmf-hardest__header {
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.pmf-hardest__title {
+    font-size: 4.25rem;
+    font-weight: var(--font-semibold);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.pmf-hardest__subtitle {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+}
+
+/* Feature Blocks */
+.pmf-hardest__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    margin-bottom: 92px;
+}
+
+.pmf-block {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+}
+
+.pmf-block--reverse {
+    flex-direction: row-reverse;
+}
+
+.pmf-block__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.pmf-block__title {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+}
+
+.pmf-block__text {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+}
+
+.pmf-block__image {
+    width: 390px;
+    height: 320px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.pmf-block__image--cream {
+    background-color: #eeefcd;
+}
+
+.pmf-block__image--navy {
+    background-color: #18215e;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.pmf-block__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pmf-block__image--navy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CTA Card */
+.pmf-hardest__cta-card {
+    background: linear-gradient(180deg, #0e0e7c 0%, #090952 100%);
+    border-radius: var(--radius-lg);
+    padding: var(--space-12) var(--space-16);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12);
+}
+
+.pmf-hardest__cta-text {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+    max-width: 800px;
+}
+
+/* =============================================================================
+   RESPONSIVE STYLES
+   ============================================================================= */
+@media (max-width: 968px) {
+    .pmf-indicators__header {
+        flex-direction: column;
+        gap: var(--space-6);
+        text-align: center;
+    }
+    
+    .pmf-indicators__title {
+        font-size: 3rem;
+    }
+    
+    .pmf-indicators__subtitle {
+        font-size: var(--text-xl);
+    }
+    
+    .indicator-card {
+        flex-direction: column;
+    }
+    
+    .indicator-card__header {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        min-height: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--space-6);
+    }
+    
+    .indicator-card__icon {
+        width: 80px;
+    }
+    
+    .indicator-card__icon--tall {
+        width: 90px;
+    }
+    
+    .indicator-card__title {
+        font-size: var(--text-2xl);
+    }
+    
+    /* PMF Hardest Section */
+    .pmf-hardest__header {
+        margin-bottom: var(--space-12);
+    }
+    
+    .pmf-hardest__title {
+        font-size: 3rem;
+    }
+    
+    .pmf-hardest__blocks {
+        margin-bottom: var(--space-12);
+    }
+    
+    .pmf-block,
+    .pmf-block--reverse {
+        flex-direction: column;
+    }
+    
+    .pmf-block__image {
+        width: 100%;
+        height: 280px;
+    }
+    
+    .pmf-block__title {
+        font-size: var(--text-3xl);
+    }
+    
+    .pmf-block__text {
+        font-size: var(--text-xl);
+    }
+    
+    .pmf-hardest__cta-card {
+        padding: var(--space-8) var(--space-6);
+    }
+    
+    .pmf-hardest__cta-text {
+        font-size: var(--text-lg);
+    }
+}
+
+@media (max-width: 640px) {
+    .pmf-indicators__title {
+        font-size: 2.25rem;
+    }
+    
+    .indicator-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .indicator-card__content {
+        padding: var(--space-5);
+    }
+    
+    .indicator-card__content-text {
+        font-size: var(--text-md);
+    }
+    
+    .pmf-indicators__cta {
+        justify-content: center;
+    }
+}
+
