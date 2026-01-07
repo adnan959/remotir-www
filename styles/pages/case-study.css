@@ -11,7 +11,7 @@
 }
 
 .case-study-detail__container {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     padding: 0 var(--container-padding);
 }
@@ -91,7 +91,7 @@
 /* Featured Image */
 .case-study-detail__image {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     height: 480px;
     background: #18215e;
     display: flex;
@@ -142,7 +142,7 @@
     gap: 48px;
     align-items: center;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .case-study-detail__content:last-child {
