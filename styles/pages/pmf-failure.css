@@ -5,6 +5,159 @@
    ============================================================================= */
 
 /* =============================================================================
+   PMF PAGE HERO (Main Hero)
+   ============================================================================= */
+.pmf-page-hero {
+    padding: var(--section-padding) 0;
+}
+
+.pmf-page-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.pmf-page-hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    text-align: center;
+}
+
+.pmf-page-hero__title {
+    font-size: 4.5rem;
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+    max-width: 950px;
+}
+
+.pmf-page-hero__subtitle {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+    max-width: 800px;
+}
+
+/* Hero Form */
+.pmf-page-hero__form {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+}
+
+.pmf-page-hero__input {
+    width: 400px;
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-xl);
+    font-weight: var(--font-regular);
+    line-height: 1.5;
+    color: #181d27;
+    background-color: white;
+    border: 1px solid #d5d7da;
+    border-radius: var(--radius-md);
+}
+
+.pmf-page-hero__input::placeholder {
+    color: #535862;
+}
+
+.pmf-page-hero__input:focus {
+    outline: none;
+    border-color: #2970ff;
+    box-shadow: 0 0 0 3px rgba(41, 112, 255, 0.15);
+}
+
+/* =============================================================================
+   PMF STATS HERO SECTION
+   ============================================================================= */
+.pmf-hero {
+    padding: var(--section-padding) 0;
+}
+
+.pmf-hero__content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.pmf-hero__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.pmf-hero__title {
+    font-size: 2.25rem;
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+}
+
+.pmf-hero__description {
+    font-size: var(--text-xl);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+}
+
+/* Stat Cards */
+.pmf-hero__stats {
+    display: flex;
+    gap: var(--space-3);
+    width: 600px;
+    flex-shrink: 0;
+}
+
+.stat-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    color: white;
+    min-height: 300px;
+}
+
+.stat-card--positive {
+    background: radial-gradient(circle at center, #0b9959 0%, #097c48 50%, #075f37 100%);
+}
+
+.stat-card--negative {
+    background: radial-gradient(circle at center, #941d14 0%, #751710 100%);
+}
+
+.stat-card__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-card__label {
+    font-size: 15px;
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+}
+
+.stat-card__value {
+    font-size: 110px;
+    font-weight: var(--font-bold);
+    line-height: 1;
+}
+
+.stat-card__description {
+    font-size: 22px;
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+}
+
+/* =============================================================================
    PMF INDICATORS SECTION
    ============================================================================= */
 .pmf-indicators {
@@ -380,6 +533,90 @@
 }
 
 /* =============================================================================
+   PMF DELIVERABLE SECTION
+   ============================================================================= */
+.pmf-deliverable {
+    padding: var(--section-padding) 0;
+}
+
+.pmf-deliverable__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: var(--space-8);
+}
+
+.pmf-deliverable__title {
+    font-size: 4.25rem;
+    font-weight: var(--font-semibold);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+}
+
+.pmf-deliverable__subtitle {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+}
+
+.pmf-deliverable__tagline {
+    font-size: var(--text-md);
+    font-weight: var(--font-semibold);
+    line-height: 1.3;
+    color: #84adff;
+    margin-bottom: var(--space-8);
+}
+
+/* Deliverable Cards */
+.pmf-deliverable__cards {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.deliverable-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    padding: var(--space-6);
+    background-color: #090952;
+    border-radius: var(--radius-lg);
+    min-height: 280px;
+}
+
+.deliverable-card__icon {
+    width: 64px;
+    height: 64px;
+}
+
+.deliverable-card__icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.deliverable-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.deliverable-card__title {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-semibold);
+    line-height: 1.3;
+    color: var(--color-text-primary);
+}
+
+.deliverable-card__text {
+    font-size: var(--text-lg);
+    font-weight: var(--font-regular);
+    line-height: 1.3;
+    color: var(--color-text-secondary);
+}
+
+/* =============================================================================
    RESPONSIVE STYLES
    ============================================================================= */
 @media (max-width: 968px) {
@@ -461,6 +698,51 @@
         font-size: var(--text-lg);
     }
     
+    /* PMF Page Hero */
+    .pmf-page-hero__title {
+        font-size: 2.5rem;
+    }
+    
+    .pmf-page-hero__subtitle {
+        font-size: var(--text-lg);
+    }
+    
+    .pmf-page-hero__form {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .pmf-page-hero__input {
+        width: 100%;
+    }
+    
+    /* PMF Stats Hero Section */
+    .pmf-hero__content {
+        flex-direction: column;
+        gap: var(--space-8);
+    }
+    
+    .pmf-hero__title {
+        font-size: 1.75rem;
+    }
+    
+    .pmf-hero__stats {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        min-height: 200px;
+    }
+    
+    .stat-card__value {
+        font-size: 72px;
+    }
+    
+    .stat-card__description {
+        font-size: var(--text-lg);
+    }
+    
     /* PMF Sprint Section */
     .pmf-sprint__header {
         flex-direction: column;
@@ -486,6 +768,23 @@
     .phase-card__features {
         grid-template-columns: 1fr;
         gap: var(--space-8);
+    }
+    
+    /* PMF Deliverable Section */
+    .pmf-deliverable__title {
+        font-size: 3rem;
+    }
+    
+    .pmf-deliverable__subtitle {
+        font-size: var(--text-xl);
+    }
+    
+    .pmf-deliverable__cards {
+        flex-direction: column;
+    }
+    
+    .deliverable-card {
+        min-height: auto;
     }
 }
 

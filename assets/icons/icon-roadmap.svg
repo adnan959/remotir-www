@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 378">
+<path id="Vector" d="M0 0V32H32C32 23.5131 28.6286 15.3737 22.6274 9.37258C16.6263 3.37142 8.48693 0 0 0Z" fill="var(--fill-0, #09BA31)"/>
+<path id="Vector_2" d="M0 64H32V32C23.5131 32 15.3737 35.3714 9.37258 41.3726C3.37142 47.3737 0 55.5131 0 64Z" fill="var(--fill-0, #09BA31)"/>
+<path id="Vector_3" d="M64 64V32H32C32 40.4869 35.3714 48.6263 41.3726 54.6274C47.3737 60.6286 55.5131 64 64 64Z" fill="var(--fill-0, #09BA31)"/>
+<path id="Vector_4" d="M64 0H32V32C40.4869 32 48.6263 28.6286 54.6274 22.6274C60.6286 16.6263 64 8.48693 64 0Z" fill="var(--fill-0, #09BA31)"/>
+</g>
+</svg>

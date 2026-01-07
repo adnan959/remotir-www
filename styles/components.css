@@ -46,6 +46,23 @@
     background-color: #f3f4f6;
 }
 
+/* Blue Button */
+.btn--blue {
+    background-color: #2970ff;
+    color: #ffffff;
+    border-color: #2970ff;
+}
+
+.btn--blue:hover {
+    background-color: #1d5ed9;
+    border-color: #1d5ed9;
+}
+
+.btn--blue:active {
+    background-color: #1a53c2;
+    border-color: #1a53c2;
+}
+
 /* Ghost Button (Transparent) */
 .btn--ghost {
     background-color: var(--color-btn-ghost-bg);

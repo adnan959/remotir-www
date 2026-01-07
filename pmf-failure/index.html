@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="/styles/theme.css">
-    <link rel="stylesheet" href="/styles/base.css">
-    <link rel="stylesheet" href="/styles/components.css">
-    <link rel="stylesheet" href="/styles/pages/pmf-failure.css">
+    <link rel="stylesheet" href="/styles/theme.css?v=2">
+    <link rel="stylesheet" href="/styles/base.css?v=2">
+    <link rel="stylesheet" href="/styles/components.css?v=2">
+    <link rel="stylesheet" href="/styles/pages/pmf-failure.css?v=3">
 </head>
 <body>
     <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -47,7 +47,7 @@
                 <a href="/pricing/" class="nav__link">Pricing</a>
             </div>
             <div class="nav__actions">
-                <a href="/contact/" class="btn btn--primary">Schedule a Call</a>
+                <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
             </div>
             <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -61,13 +61,60 @@
             <a href="/predictable-revenue/" class="nav__link">Predictable Revenue</a>
             <a href="/results/" class="nav__link">Results</a>
             <a href="/pricing/" class="nav__link">Pricing</a>
-            <a href="/contact/" class="btn btn--primary">Schedule a Call</a>
+            <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
         </div>
     </nav>
 
     <main>
         <div style="height: var(--nav-height);"></div>
         
+        <!-- PMF Page Hero -->
+        <section class="pmf-page-hero">
+            <div class="container">
+                <div class="pmf-page-hero__content">
+                    <div class="pmf-page-hero__text">
+                        <h1 class="pmf-page-hero__title">Early Traction ≠ PMF</h1>
+                        <p class="pmf-page-hero__subtitle">Revenue derived from founder hustle, discounted pilots and "founding partners", or network leverage is not PMF. Till you validate PMF, every step you take accelerates failure and impairs valuation.</p>
+                    </div>
+                    <form class="pmf-page-hero__form" action="https://formspree.io/f/mojvgeev" method="POST">
+                        <input type="email" name="email" class="pmf-page-hero__input" placeholder="Enter work email..." required>
+                        <input type="hidden" name="_next" value="https://offers.remotir.com/schedule/">
+                        <input type="hidden" name="_subject" value="New PMF Diagnostic Lead">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="btn btn--blue btn--lg">Book a PMF Diagnostic →</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- PMF Stats Hero Section -->
+        <section class="pmf-hero">
+            <div class="container">
+                <div class="pmf-hero__content">
+                    <div class="pmf-hero__text">
+                        <h1 class="pmf-hero__title">Raising on "Potential" Alone Leaves Money on The Table</h1>
+                        <p class="pmf-hero__description">Companies without indisputable PMF face flat rounds, down rounds, or punitive bridges (&lt;1.5x step-ups)</p>
+                    </div>
+                    <div class="pmf-hero__stats">
+                        <div class="stat-card stat-card--positive">
+                            <div class="stat-card__header">
+                                <span class="stat-card__label">Up to</span>
+                                <span class="stat-card__value">5x</span>
+                            </div>
+                            <p class="stat-card__description">Series A Valuation Step up for companies with validated PMF</p>
+                        </div>
+                        <div class="stat-card stat-card--negative">
+                            <div class="stat-card__header">
+                                <span class="stat-card__label">Up to</span>
+                                <span class="stat-card__value">20%</span>
+                            </div>
+                            <p class="stat-card__description">Valuation penalty for Bridge Rounds with No PMF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- PMF Indicators Section -->
         <section class="pmf-indicators">
             <div class="container">
@@ -340,6 +387,50 @@
                                     <p class="phase-feature__text">We measure the shift from "Outbound Push" to "Inbound Pull." If the market doesn't start pulling the product out of your hands, we know the variable to change before you burn another month of runway.</p>
                                 </div>
                             </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Deliverable Section -->
+        <section class="pmf-deliverable">
+            <div class="container">
+                <div class="pmf-deliverable__header">
+                    <h2 class="pmf-deliverable__title">The Deliverable:<br>A "Proven" Asset</h2>
+                    <p class="pmf-deliverable__subtitle">The goal of this sprint is not just "sales." It is to transition your company from a "Searching" valuation tier to a "Proven" valuation tier.</p>
+                </div>
+                
+                <p class="pmf-deliverable__tagline">We deliver the three specific signals investors demand for a Series A Step-Up:</p>
+                
+                <div class="pmf-deliverable__cards">
+                    <article class="deliverable-card">
+                        <div class="deliverable-card__icon">
+                            <img src="/assets/icons/icon-buyer.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="deliverable-card__content">
+                            <h3 class="deliverable-card__title">Validated<br>Economic Buyer</h3>
+                            <p class="deliverable-card__text">No more tire-kickers. The precise profile of who signs.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="deliverable-card">
+                        <div class="deliverable-card__icon">
+                            <img src="/assets/icons/icon-painkiller.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="deliverable-card__content">
+                            <h3 class="deliverable-card__title">The "Painkiller" Narrative</h3>
+                            <p class="deliverable-card__text">Exact words that convert skepticism to urgency.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="deliverable-card">
+                        <div class="deliverable-card__icon">
+                            <img src="/assets/icons/icon-roadmap.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="deliverable-card__content">
+                            <h3 class="deliverable-card__title">Efficient Growth Roadmap</h3>
+                            <p class="deliverable-card__text">90-day plan to 120% NRR that commands multiples.</p>
                         </div>
                     </article>
                 </div>
