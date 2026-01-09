@@ -22,14 +22,17 @@
     right: 0;
     width: 100%;
     pointer-events: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hero__bg-image {
     width: 100%;
+    max-width: 1400px;
     height: auto;
     display: block;
     object-fit: cover;
-    object-position: bottom center;
+    object-position: bottom right;
 }
 
 .hero__content {
@@ -1666,6 +1669,16 @@
     .hero {
         padding-top: 48px;
         padding-bottom: 200px;
+    }
+    
+    .hero__bg {
+        justify-content: center;
+    }
+    
+    .hero__bg-image {
+        width: 150%;
+        max-width: none;
+        transform: translateX(10%);
     }
     
     .hero__title {

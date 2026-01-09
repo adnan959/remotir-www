@@ -270,6 +270,26 @@
     border-bottom: 1px solid var(--color-border);
 }
 
+.nav__mobile-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.nav__mobile-header {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: var(--space-4) 0 var(--space-2) 0;
+}
+
+.nav__mobile-group .nav__link {
+    padding-left: var(--space-4);
+    font-size: var(--text-md);
+}
+
 .nav__mobile .btn {
     margin-top: var(--space-4);
     width: 100%;
