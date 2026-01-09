@@ -1,9 +1,117 @@
 /**
  * REMOTIR WWW - Main JavaScript
- * Mobile navigation and interactions.
+ * Mobile navigation, interactions, and scroll animations.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // =========================================================================
+    // FADE-IN ANIMATIONS
+    // =========================================================================
+    
+    // Check if element is in viewport
+    const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom > 0
+        );
+    };
+    
+    // Initialize scroll-triggered animations
+    const initScrollAnimations = () => {
+        const animatedElements = document.querySelectorAll('.fade-in');
+        
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.1
+            });
+            
+            // For elements already in viewport on page load, animate immediately
+            // For elements below the fold, use the observer
+            animatedElements.forEach(el => {
+                if (isInViewport(el)) {
+                    // Small delay to ensure CSS transition is ready
+                    setTimeout(() => {
+                        el.classList.add('is-visible');
+                    }, 50);
+                } else {
+                    observer.observe(el);
+                }
+            });
+        } else {
+            // Fallback for older browsers
+            animatedElements.forEach(el => el.classList.add('is-visible'));
+        }
+    };
+    
+    // Add fade-in classes to elements
+    const setupAnimations = () => {
+        // Hero section - staggered fade-in on load
+        const heroTitle = document.querySelector('.hero__title');
+        const heroSubtitle = document.querySelector('.hero__subtitle');
+        const heroActions = document.querySelector('.hero__actions');
+        const heroBg = document.querySelector('.hero__bg');
+        
+        if (heroTitle) heroTitle.classList.add('fade-in', 'fade-in--up', 'fade-in--delay-1');
+        if (heroSubtitle) heroSubtitle.classList.add('fade-in', 'fade-in--up', 'fade-in--delay-2');
+        if (heroActions) heroActions.classList.add('fade-in', 'fade-in--up', 'fade-in--delay-3');
+        if (heroBg) heroBg.classList.add('fade-in', 'fade-in--delay-2');
+        
+        // Logos section
+        const logosTagline = document.querySelector('.logos-section__tagline');
+        const logosCarousel = document.querySelector('.logos-carousel');
+        if (logosTagline) logosTagline.classList.add('fade-in');
+        if (logosCarousel) logosCarousel.classList.add('fade-in', 'fade-in--delay-1');
+        
+        // Force Multiplier section
+        const multiplierHeader = document.querySelector('.multiplier__header');
+        const multiplierCards = document.querySelectorAll('.multiplier-card');
+        if (multiplierHeader) multiplierHeader.classList.add('fade-in', 'fade-in--up');
+        multiplierCards.forEach((card, i) => {
+            card.classList.add('fade-in', 'fade-in--up', `fade-in--delay-${Math.min(i + 1, 4)}`);
+        });
+        
+        // Persona blocks
+        const personaBlocks = document.querySelectorAll('.persona-block');
+        personaBlocks.forEach(block => {
+            const header = block.querySelector('.persona-block__header');
+            const fixes = block.querySelector('.persona-block__fixes');
+            if (header) header.classList.add('fade-in', 'fade-in--up');
+            if (fixes) fixes.classList.add('fade-in', 'fade-in--up', 'fade-in--delay-1');
+        });
+        
+        // Results section
+        const resultsHeader = document.querySelector('.results-header--split');
+        const caseStudyCards = document.querySelectorAll('.case-study-card');
+        if (resultsHeader) resultsHeader.classList.add('fade-in', 'fade-in--up');
+        caseStudyCards.forEach((card, i) => {
+            card.classList.add('fade-in', 'fade-in--up', `fade-in--delay-${Math.min(i + 1, 4)}`);
+        });
+        
+        // CTA section
+        const ctaContent = document.querySelector('.cta__content');
+        const ctaVisual = document.querySelector('.cta__visual');
+        if (ctaContent) ctaContent.classList.add('fade-in', 'fade-in--up');
+        if (ctaVisual) ctaVisual.classList.add('fade-in', 'fade-in--delay-2');
+        
+        // Trigger animations after a brief delay to ensure CSS is loaded
+        requestAnimationFrame(() => {
+            document.body.classList.add('animations-ready');
+            initScrollAnimations();
+        });
+    };
+    
+    setupAnimations();
+
     // Mobile Navigation Toggle
     const mobileToggle = document.querySelector('.nav__mobile-toggle');
     const mobileNav = document.querySelector('.nav__mobile');

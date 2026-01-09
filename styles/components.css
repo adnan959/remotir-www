@@ -78,6 +78,23 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Hero Primary Button (White with dark text) */
+.btn--hero-primary {
+    background-color: white;
+    color: #414651;
+    border: 1px solid #d5d7da;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    border-radius: 8px;
+}
+
+.btn--hero-primary:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+}
+
 /* Button Sizes */
 .btn--sm {
     padding: 8px var(--space-3);

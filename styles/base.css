@@ -100,6 +100,60 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =============================================================================
+   FADE-IN ANIMATIONS
+   ============================================================================= */
+
+/* Base fade-in class - hidden by default */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Variation: fade in with upward movement */
+.fade-in--up {
+    transform: translateY(30px);
+}
+
+/* Variation: fade in with scale */
+.fade-in--scale {
+    transform: scale(0.95);
+}
+
+/* Visible state */
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Staggered delays */
+.fade-in--delay-1 { transition-delay: 0.1s; }
+.fade-in--delay-2 { transition-delay: 0.2s; }
+.fade-in--delay-3 { transition-delay: 0.3s; }
+.fade-in--delay-4 { transition-delay: 0.4s; }
+
+/* Ensure animations don't run until JS is ready */
+body:not(.animations-ready) .fade-in {
+    opacity: 1;
+    transform: none;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    
+    .fade-in--delay-1,
+    .fade-in--delay-2,
+    .fade-in--delay-3,
+    .fade-in--delay-4 {
+        transition-delay: 0s;
+    }
+}
+
+/* =============================================================================
    RESPONSIVE UTILITIES
    ============================================================================= */
 @media (max-width: 768px) {
