@@ -17,6 +17,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
     color: var(--color-text-primary);
     background-color: var(--color-bg-primary);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 img, picture, video, canvas, svg {

@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <a href="/results/" class="nav__link">Impact</a>
-                <a href="/pricing/" class="nav__link">Insights</a>
+                <a href="/insights/" class="nav__link">Insights</a>
             </div>
             
             <!-- CTA Button -->
@@ -141,7 +141,7 @@
             </div>
             
             <a href="/results/" class="nav__link">Impact</a>
-            <a href="/pricing/" class="nav__link">Insights</a>
+            <a href="/insights/" class="nav__link">Insights</a>
             <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
         </div>
     </nav>
@@ -455,11 +455,11 @@
                         <input type="hidden" name="_subject" value="New GTM Infrastructure Lead">
                         <input type="text" name="_gotcha" style="display:none">
                         <!-- UTM Tracking Hidden Fields -->
-                        <input type="hidden" name="utm_source" id="utm_source" value="">
-                        <input type="hidden" name="utm_medium" id="utm_medium" value="">
-                        <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
-                        <input type="hidden" name="utm_content" id="utm_content" value="">
-                        <input type="hidden" name="utm_term" id="utm_term" value="">
+                        <input type="hidden" name="utm_source" class="utm-field" data-utm="utm_source" value="">
+                        <input type="hidden" name="utm_medium" class="utm-field" data-utm="utm_medium" value="">
+                        <input type="hidden" name="utm_campaign" class="utm-field" data-utm="utm_campaign" value="">
+                        <input type="hidden" name="utm_content" class="utm-field" data-utm="utm_content" value="">
+                        <input type="hidden" name="utm_term" class="utm-field" data-utm="utm_term" value="">
                         <button type="submit" class="cta__submit">Validate Your GTM Infrastructure →</button>
                     </form>
                 </div>
@@ -482,49 +482,43 @@
                     <a href="/" class="footer__logo" aria-label="Remotir Home">
                         <img src="/assets/remotir-logo.png" alt="Remotir" height="33">
                     </a>
-                    <p class="footer__tagline">Remotir is a GTM Infrastructure Firm.</p>
-                    <p class="footer__description">We design, install, and operate revenue systems that replace unvalidated burn with market-proven signal, so companies can scale efficiently and defend their valuation.</p>
+                    <p class="footer__description">Remotir is a GTM Infrastructure Firm. We design, install, and operate revenue systems that replace unvalidated burn with market-proven signal.</p>
                 </div>
                 
                 <!-- Link Columns -->
                 <div class="footer__columns">
-                    <!-- What we do -->
+                    <!-- Solutions -->
                     <div class="footer__column">
-                        <h4 class="footer__column-title">What we do</h4>
+                        <h4 class="footer__column-title">Solutions</h4>
                         <div class="footer__column-links">
-                            <a href="#" class="footer__link">PMF Validation Sprint</a>
-                            <a href="#" class="footer__link">Pipeline Engine</a>
-                            <a href="#" class="footer__link">Revenue Engine</a>
-                            <a href="#" class="footer__link">GTM Infrastructure</a>
+                            <a href="/pmf-sprint/" class="footer__link">PMF Sprint</a>
+                            <a href="/predictable-revenue/" class="footer__link">Predictable Revenue</a>
+                            <a href="/pmf-failure/" class="footer__link">PMF Failure</a>
+                            <a href="/unpredictable-pipeline/" class="footer__link">Unpredictable Pipeline</a>
                         </div>
                     </div>
                     
-                    <!-- Who we help -->
+                    <!-- Case Studies -->
                     <div class="footer__column">
-                        <h4 class="footer__column-title">Who we help</h4>
+                        <h4 class="footer__column-title">Case Studies</h4>
                         <div class="footer__column-links">
-                            <a href="#" class="footer__link">Founders</a>
-                            <a href="#" class="footer__link">CRO / VP Sales</a>
-                            <a href="#" class="footer__link">CMO / Head of Marketing</a>
-                            <a href="#" class="footer__link">Investors</a>
+                            <a href="/results/" class="footer__link">View All Results</a>
+                            <a href="/case-study-right-to-play/" class="footer__link">£20M Series A Validation</a>
+                            <a href="/case-study-efficiency-gain/" class="footer__link">66% Efficiency Gain</a>
+                            <a href="/case-study-d2c-transformation/" class="footer__link">600% D2C Volume Uplift</a>
+                            <a href="/case-study-pmf-pivot/" class="footer__link">137x ACV Increase</a>
                         </div>
                     </div>
                     
-                    <!-- Insights -->
+                    <!-- Company -->
                     <div class="footer__column">
-                        <h4 class="footer__column-title">Insights</h4>
+                        <h4 class="footer__column-title">Company</h4>
                         <div class="footer__column-links">
-                            <a href="#" class="footer__link">Case Studies</a>
-                            <a href="#" class="footer__link">PMF Failure</a>
-                            <a href="#" class="footer__link">GTM Infrastructure</a>
-                            <a href="#" class="footer__link">Revenue Efficiency</a>
+                            <a href="/insights/" class="footer__link">Insights</a>
+                            <a href="/schedule/" class="footer__link">Schedule a Call</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="footer__bottom">
-                <p class="footer__copyright">© Remotir. All rights reserved.</p>
             </div>
         </div>
     </footer>

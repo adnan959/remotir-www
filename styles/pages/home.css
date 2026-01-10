@@ -12,7 +12,7 @@
     padding-top: 96px;
     padding-bottom: 340px;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .hero__bg {
@@ -1822,13 +1822,14 @@
     }
     
     .hero__bg {
-        justify-content: center;
+        justify-content: flex-end;
+        overflow: hidden;
     }
     
     .hero__bg-image {
-        width: 150%;
+        width: 100%;
         max-width: none;
-        transform: translateX(10%);
+        object-position: right bottom;
     }
     
     .hero__title {

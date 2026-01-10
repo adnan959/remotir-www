@@ -240,6 +240,16 @@
     color: #252b37;
 }
 
+.nav__dropdown-item--active {
+    background-color: #f0f5ff;
+    color: #2970FF;
+}
+
+/* Parent dropdown trigger active when child is active */
+.nav__dropdown-trigger--active {
+    color: var(--color-text-primary);
+}
+
 /* Nav Actions */
 .nav__actions {
     display: flex;
@@ -305,6 +315,10 @@
 .nav__mobile-group .nav__link {
     padding-left: var(--space-4);
     font-size: var(--text-md);
+}
+
+.nav__mobile .nav__link--active {
+    color: var(--color-text-primary);
 }
 
 .nav__mobile .btn {

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * Captures UTM parameters from the URL and populates hidden form fields.
      * Also stores UTM values in sessionStorage to persist across page navigation.
+     * Works with all forms on the page using class selectors.
      */
     const initUTMTracking = () => {
         const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
@@ -24,12 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        // Populate hidden form fields from sessionStorage
+        // Populate all UTM hidden fields across all forms on the page
         utmParams.forEach(param => {
             const storedValue = sessionStorage.getItem(param);
-            const field = document.getElementById(param);
-            if (field && storedValue) {
-                field.value = storedValue;
+            if (storedValue) {
+                // Find all fields with the matching data-utm attribute
+                const fields = document.querySelectorAll(`.utm-field[data-utm="${param}"]`);
+                fields.forEach(field => {
+                    field.value = storedValue;
+                });
             }
         });
     };
