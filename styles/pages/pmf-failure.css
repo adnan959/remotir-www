@@ -2077,6 +2077,10 @@
         font-size: 16px;
     }
     
+    .steps-v2__cta {
+        margin-top: 32px;
+    }
+    
     .steps-v2__timeline-line,
     .steps-v2__card::after,
     .steps-v2__timeline-end {
