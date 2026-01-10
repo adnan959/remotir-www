@@ -326,8 +326,8 @@
     
     .multiplier__subtitle {
         font-size: 20px;
-    }
-    
+}
+
     .multiplier__grid {
         grid-template-columns: 1fr;
     }
@@ -507,7 +507,7 @@
     }
     
     .persona-card {
-        gap: 16px;
+    gap: 16px;
         padding: 16px;
     }
     
