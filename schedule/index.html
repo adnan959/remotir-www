@@ -45,9 +45,12 @@
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/components.css">
     
-    <!-- Calendly -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Cal.com -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", {origin:"https://cal.com"});
+        Cal("ui", {"theme":"light","styles":{"branding":{"brandColor":"#2970FF"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
     
     <style>
         /* Schedule Page Specific Styles */
@@ -134,7 +137,7 @@
             overflow: hidden;
         }
         
-        .calendly-inline-widget {
+        .cal-inline-widget {
             min-width: 320px;
             height: 700px;
             border-radius: var(--radius-lg);
@@ -142,7 +145,7 @@
         }
         
         @media (max-width: 768px) {
-            .calendly-inline-widget {
+            .cal-inline-widget {
                 height: 1000px;
             }
         }
@@ -394,10 +397,10 @@
                         <line x1="8" y1="2" x2="8" y2="6"/>
                         <line x1="3" y1="10" x2="21" y2="10"/>
                     </svg>
-                    Book Your Strategy Session
+                    30 Min Discovery Call
                 </span>
-                <h1 class="schedule-hero__title">Let's Talk About Your Revenue Growth</h1>
-                <p class="schedule-hero__subtitle">Schedule a complimentary 30-minute strategy call to discuss your GTM challenges and explore how we can help you build predictable, scalable revenue.</p>
+                <h1 class="schedule-hero__title">Book a Free Strategy Call</h1>
+                <p class="schedule-hero__subtitle">We'll learn about your business, share a bit about our process, and see if there's a fit. No hard pitch, just value.</p>
                 
                 <div class="trust-row">
                     <div class="trust-item">
@@ -422,12 +425,18 @@
             </div>
         </section>
         
-        <!-- Calendly Section -->
+        <!-- Cal.com Section -->
         <section class="calendly-section">
             <div class="container">
                 <div class="calendly-wrapper">
-                    <!-- Replace 'your-calendly-username' with your actual Calendly username -->
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendly-username/30min?hide_gdpr_banner=1&background_color=05052c&text_color=ffffff&primary_color=6366f1"></div>
+                    <div class="cal-inline-widget" id="my-cal-inline" style="width:100%;height:100%;overflow:scroll"></div>
+                    <script type="text/javascript">
+                        Cal("inline", {
+                            calLink: "remotir/15",
+                            elementOrSelector: "#my-cal-inline",
+                            config: {"layout":"month_view","theme":"light"}
+                        });
+                    </script>
                 </div>
             </div>
         </section>
