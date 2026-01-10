@@ -5,6 +5,37 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // =========================================================================
+    // UTM TRACKING
+    // =========================================================================
+    
+    /**
+     * Captures UTM parameters from the URL and populates hidden form fields.
+     * Also stores UTM values in sessionStorage to persist across page navigation.
+     */
+    const initUTMTracking = () => {
+        const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Check URL for UTM params and store in sessionStorage if found
+        utmParams.forEach(param => {
+            const value = urlParams.get(param);
+            if (value) {
+                sessionStorage.setItem(param, value);
+            }
+        });
+        
+        // Populate hidden form fields from sessionStorage
+        utmParams.forEach(param => {
+            const storedValue = sessionStorage.getItem(param);
+            const field = document.getElementById(param);
+            if (field && storedValue) {
+                field.value = storedValue;
+            }
+        });
+    };
+    
+    initUTMTracking();
+    // =========================================================================
     // FADE-IN ANIMATIONS
     // =========================================================================
     

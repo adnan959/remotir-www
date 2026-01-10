@@ -2638,6 +2638,19 @@
     align-self: center;
 }
 
+.testimonials-v2__stars {
+    display: flex;
+    gap: 2px;
+    color: #fbbf24;
+    margin-bottom: 12px;
+}
+
+.testimonials-v2__stars svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
 .testimonials-v2__quote {
     font-size: 18px;
     font-weight: 400;
