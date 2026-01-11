@@ -75,6 +75,15 @@ def replace_partials(content, partials):
     
     return re.sub(pattern, replacer, content)
 
+def inject_head_scripts(content, partials):
+    """Inject head-scripts partial before </head> tag"""
+    if 'head-scripts' not in partials:
+        return content
+    
+    head_scripts = partials['head-scripts']
+    # Insert head scripts just before </head>
+    return content.replace('</head>', head_scripts + '\n</head>', 1)
+
 def get_html_files(directory, base_dir=None):
     """Recursively get all HTML files, excluding partials"""
     if base_dir is None:
@@ -143,8 +152,12 @@ def generate_sitemap(html_files):
     """Generate sitemap.xml from processed HTML files"""
     print('\nGenerating sitemap.xml...')
     
+    # Exclude pages that should not be indexed
+    excluded_paths = ['thank-you/']
+    filtered_files = [f for f in html_files if not any(excl in f for excl in excluded_paths)]
+    
     # Sort files for consistent output
-    sorted_files = sorted(html_files)
+    sorted_files = sorted(filtered_files)
     
     # Build XML content
     xml_lines = [
@@ -182,7 +195,7 @@ def generate_sitemap(html_files):
     with open(sitemap_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(xml_lines))
     
-    print(f'  ✓ sitemap.xml ({len(html_files)} URLs)')
+    print(f'  ✓ sitemap.xml ({len(sorted_files)} URLs)')
 
 def build():
     """Build all pages from templates"""
@@ -206,6 +219,7 @@ def build():
             content = f.read()
         
         content = replace_partials(content, partials)
+        content = inject_head_scripts(content, partials)
         
         # Ensure output directory exists
         os.makedirs(os.path.dirname(out_path), exist_ok=True)

@@ -3,29 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Unit Economics Reckoning - $0 to $100k Playbook | Remotir</title>
-    <meta name="title" content="The Unit Economics Reckoning - $0 to $100k Playbook | Remotir">
-    <meta name="description" content="Scaling before your unit economics are solved is pouring gasoline on a fire in your own house. The CAC Payback Threshold determines whether you have permission to scale.">
-    <meta name="keywords" content="unit economics, CAC, LTV, SaaS metrics, payback period, B2B economics">
+    <title>Thank You - Your Call Has Been Scheduled | Remotir</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Thank You - Your Call Has Been Scheduled | Remotir">
+    <meta name="description" content="Great news! Your demo call has been scheduled. Here's what happens next and what you can expect from working with Remotir.">
     <meta name="author" content="Remotir">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.remotir.com/insights/0-100k-playbook/unit-economics/">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.remotir.com/insights/0-100k-playbook/unit-economics/">
-    <meta property="og:title" content="The Unit Economics Reckoning - $0 to $100k Playbook | Remotir">
-    <meta property="og:description" content="The CAC Payback Threshold determines whether you have permission to scale.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://www.remotir.com/thank-you/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.remotir.com/thank-you/">
+    <meta property="og:title" content="Thank You - Your Call Has Been Scheduled | Remotir">
+    <meta property="og:description" content="Great news! Your demo call has been scheduled.">
     <meta property="og:image" content="https://www.remotir.com/assets/og-image.jpeg">
+    <meta property="og:site_name" content="Remotir">
+    <meta property="og:locale" content="en_GB">
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.remotir.com/thank-you/">
+    <meta name="twitter:title" content="Thank You - Your Call Has Been Scheduled | Remotir">
+    <meta name="twitter:description" content="Great news! Your demo call has been scheduled.">
+    <meta name="twitter:image" content="https://www.remotir.com/assets/og-image.jpeg">
+    
+    <!-- Theme -->
     <meta name="theme-color" content="#05052c">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="/styles/theme.css">
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/components.css">
-    <link rel="stylesheet" href="/styles/pages/insights.css">
+    
+    <style>
+        /* Thank You Page Styles */
+        .thank-you-hero {
+            padding: var(--space-20) 0 var(--space-16);
+            text-align: center;
+        }
+        
+        .thank-you-hero__icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-6);
+        }
+        
+        .thank-you-hero__icon svg {
+            width: 40px;
+            height: 40px;
+            color: #22c55e;
+        }
+        
+        .thank-you-hero__title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: var(--font-bold);
+            line-height: var(--leading-tight);
+            letter-spacing: var(--tracking-tight);
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-4);
+        }
+        
+        .thank-you-hero__subtitle {
+            font-size: var(--text-xl);
+            color: var(--color-text-secondary);
+            line-height: var(--leading-relaxed);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* What Happens Next Section */
+        .next-steps {
+            padding: var(--space-12) 0 var(--space-20);
+        }
+        
+        .next-steps__card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-xl);
+            padding: var(--space-10);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .next-steps__header {
+            text-align: center;
+            margin-bottom: var(--space-8);
+        }
+        
+        .next-steps__title {
+            font-size: var(--text-2xl);
+            font-weight: var(--font-semibold);
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-2);
+        }
+        
+        .next-steps__list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
+        
+        .next-steps__item {
+            display: flex;
+            gap: var(--space-4);
+            align-items: flex-start;
+        }
+        
+        .next-steps__number {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-sm);
+            font-weight: var(--font-semibold);
+            color: white;
+        }
+        
+        .next-steps__content h3 {
+            font-size: var(--text-lg);
+            font-weight: var(--font-semibold);
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-1);
+        }
+        
+        .next-steps__content p {
+            font-size: var(--text-base);
+            color: var(--color-text-secondary);
+            line-height: var(--leading-relaxed);
+        }
+        
+        .next-steps__content strong {
+            color: var(--color-text-primary);
+        }
+        
+        /* Testimonials Section - Simplified for Thank You page */
+        .thank-you-testimonials {
+            padding: var(--space-16) 0 var(--space-20);
+            background: rgba(255, 255, 255, 0.01);
+        }
+        
+        .thank-you-testimonials__header {
+            text-align: center;
+            margin-bottom: var(--space-12);
+        }
+        
+        .thank-you-testimonials__title {
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            font-weight: var(--font-bold);
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-3);
+        }
+        
+        .thank-you-testimonials__subtitle {
+            font-size: var(--text-lg);
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-6);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 1024px) {
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .testimonial-card__quote {
+            font-size: var(--text-base);
+            color: var(--color-text-secondary);
+            line-height: var(--leading-relaxed);
+            margin-bottom: var(--space-6);
+            flex-grow: 1;
+        }
+        
+        .testimonial-card__author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            padding-top: var(--space-4);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        
+        .testimonial-card__avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .testimonial-card__name {
+            font-size: var(--text-sm);
+            font-weight: var(--font-semibold);
+            color: var(--color-text-primary);
+        }
+        
+        .testimonial-card__role {
+            font-size: var(--text-xs);
+            color: var(--color-text-muted);
+        }
+    </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T07SS55NJ9"></script>
     <script>
@@ -108,7 +325,7 @@
                 
                 <!-- Insights Mega Dropdown -->
                 <div class="nav__mega-dropdown">
-                    <button class="nav__dropdown-trigger nav__dropdown-trigger--active" aria-expanded="false" aria-haspopup="true">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
                         Insights
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
@@ -169,123 +386,137 @@
         </div>
     </nav>
 
+
     <main>
         <div style="height: var(--nav-height);"></div>
-        <article class="chapter-page">
-            <div class="chapter-container">
-                <nav class="chapter-breadcrumb" aria-label="Breadcrumb">
-                    <a href="/insights/">Insights</a>
-                    <span class="chapter-breadcrumb__separator">/</span>
-                    <a href="/insights/0-100k-playbook/">$0 to $100k Playbook</a>
-                    <span class="chapter-breadcrumb__separator">/</span>
-                    <span class="chapter-breadcrumb__current">Unit Economics</span>
-                </nav>
-                <header class="chapter-header">
-                    <span class="chapter-header__label">Phase 3: Scaling · Chapter 9</span>
-                    <h1 class="chapter-header__title">The Unit Economics Reckoning</h1>
-                    <div class="chapter-header__meta">
-                        <span class="chapter-header__meta-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                            8 min read
-                        </span>
+        
+        <!-- Hero Section -->
+        <section class="thank-you-hero">
+            <div class="container">
+                <div class="thank-you-hero__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                </div>
+                <h1 class="thank-you-hero__title">Your Demo Call Has Been Scheduled</h1>
+                <p class="thank-you-hero__subtitle">Great news! We're looking forward to learning about your business and sharing how we can help.</p>
+            </div>
+        </section>
+        
+        <!-- What Happens Next -->
+        <section class="next-steps">
+            <div class="container">
+                <div class="next-steps__card">
+                    <div class="next-steps__header">
+                        <h2 class="next-steps__title">What Happens Next?</h2>
                     </div>
-                    <p class="chapter-header__summary">
-                        <strong>Core Argument:</strong> Scaling before your unit economics are solved is pouring gasoline on a fire in your own house. Bad economics do not improve with volume—they accelerate toward failure.
-                    </p>
-                </header>
-                <div class="chapter-content">
-                    <h2>The Growth Illusion</h2>
-                    <p>Revenue growth is intoxicating. The MRR chart goes up. Customers are signing. Investors are interested.</p>
-                    <p><strong>And beneath the surface, the company is dying.</strong></p>
-                    <p>The pattern: A startup reaches $50k, $100k, $200k MRR—and runs out of money. The revenue was real. The customers were real. But the unit economics were broken. Every customer cost more to acquire and serve than they would ever pay.</p>
-                    <p><strong>Growth with broken economics is accelerated death.</strong></p>
-                    <p>Over 40% of SaaS companies fail to achieve profitability even after reaching $10M ARR. They grew their way into bankruptcy.</p>
-                    <hr>
-                    <h2>The Three Numbers That Matter</h2>
-                    <h3>1. Customer Acquisition Cost (CAC)</h3>
-                    <p><strong>Definition:</strong> The total cost to acquire one customer, including all sales and marketing expense.</p>
-                    <p><strong>Common Mistakes:</strong> Excluding founder time, excluding marketing overhead, counting freemium signups as "customers."</p>
-                    <p><strong>The Reality:</strong> If you would need to spend it at scale, count it now.</p>
-                    <h3>2. Lifetime Value (LTV)</h3>
-                    <p><strong>Definition:</strong> The total revenue a customer generates over their entire relationship.</p>
-                    <p><strong>Calculation:</strong> ARPA × Gross Margin × Customer Lifetime</p>
-                    <p><strong>At early stage:</strong> You do not have enough data for true LTV. Use conservative estimates based on current retention.</p>
-                    <h3>3. CAC Payback Period</h3>
-                    <p><strong>Definition:</strong> How many months until a customer's payments cover their acquisition cost.</p>
-                    <p><strong>Calculation:</strong> CAC ÷ (ARPA × Gross Margin)</p>
-                    <p><strong>This is the metric that determines whether you have permission to scale.</strong></p>
-                    <hr>
-                    <h2>The CAC Payback Threshold</h2>
-                    <table>
-                        <thead><tr><th>Stage</th><th>Maximum Acceptable Payback</th></tr></thead>
-                        <tbody>
-                            <tr><td>Pre-Seed / Seed</td><td>6-9 months</td></tr>
-                            <tr><td>Series A</td><td>12-15 months</td></tr>
-                            <tr><td>Series B+</td><td>18-24 months</td></tr>
-                        </tbody>
-                    </table>
-                    <p><strong>If your payback exceeds the threshold for your stage, you do not have permission to scale.</strong></p>
-                    <hr>
-                    <h2>The Churn Tax</h2>
-                    <p>Churn creates an implicit increase in CAC. If 20% of customers churn before payback completes, your effective CAC is 25% higher than your stated CAC.</p>
-                    <p><strong>Effective CAC = Stated CAC ÷ (1 - Probability of Early Churn)</strong></p>
-                    <hr>
-                    <h2>The LTV:CAC Ratio</h2>
-                    <p>The traditional benchmark is LTV:CAC of 3:1. But at early stage, this ratio is less useful than CAC Payback because you don't have reliable LTV data.</p>
-                    <p><strong>Focus on payback first. LTV:CAC becomes relevant at scale.</strong></p>
-                    <hr>
-                    <h2>Fixing Broken Economics</h2>
-                    <p><strong>If CAC is too high:</strong></p>
-                    <ul>
-                        <li>Improve conversion rates (messaging, targeting, sales process)</li>
-                        <li>Reduce cost per lead (channel optimization, better qualification)</li>
-                        <li>Shorten sales cycle (better qualification, urgency creation)</li>
-                    </ul>
-                    <p><strong>If LTV is too low:</strong></p>
-                    <ul>
-                        <li>Increase price (often the fastest fix)</li>
-                        <li>Reduce churn (product, onboarding, success)</li>
-                        <li>Expand revenue (upsells, cross-sells, usage-based)</li>
-                    </ul>
-                    <hr>
-                    <h2>Conclusion: Economics Before Scale</h2>
-                    <p>The Unit Economics Reckoning is not optional. It is the diagnostic that determines whether growth creates value or destroys it.</p>
-                    <p><strong>Before you scale, answer one question: Do the economics work?</strong></p>
-                    <p>If yes, pour fuel on the fire. If no, fix the economics first. Scale amplifies whatever exists. Make sure what exists is worth amplifying.</p>
-                    <div class="chapter-frameworks">
-                        <h3 class="chapter-frameworks__title">Key Frameworks</h3>
-                        <div class="chapter-frameworks__list">
-                            <div class="chapter-frameworks__item">
-                                <div class="chapter-frameworks__item-title">CAC Payback Threshold</div>
-                                <div class="chapter-frameworks__item-desc">The maximum acceptable months to recover customer acquisition cost at each company stage. Seed: 6-9 months. Series A: 12-15 months.</div>
+                    <div class="next-steps__list">
+                        <div class="next-steps__item">
+                            <span class="next-steps__number">1</span>
+                            <div class="next-steps__content">
+                                <h3>Check Your Email</h3>
+                                <p>You'll receive a calendar invite with the meeting details. Confirm the date and time are correct.</p>
                             </div>
-                            <div class="chapter-frameworks__item">
-                                <div class="chapter-frameworks__item-title">The Churn Tax</div>
-                                <div class="chapter-frameworks__item-desc">The implicit increase in effective CAC caused by customers who churn before payback completes.</div>
+                        </div>
+                        <div class="next-steps__item">
+                            <span class="next-steps__number">2</span>
+                            <div class="next-steps__content">
+                                <h3>Add to Calendar</h3>
+                                <p>Respond <strong>"yes"</strong> to add the meeting to your calendar so you don't miss it.</p>
+                            </div>
+                        </div>
+                        <div class="next-steps__item">
+                            <span class="next-steps__number">3</span>
+                            <div class="next-steps__content">
+                                <h3>Come Prepared</h3>
+                                <p>Think about your current GTM challenges and revenue goals. The more context you share, the more value we can provide.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="chapter-references">
-                        <h3 class="chapter-references__title">References</h3>
-                        <ol class="chapter-references__list">
-                            <li><strong>SaaS Capital (2024)</strong>. <em>SaaS Profitability Research.</em> <a href="https://saas-capital.com" target="_blank" rel="noopener">Link</a></li>
-                            <li><strong>OpenView Partners (2024)</strong>. <em>SaaS Benchmarks Report.</em> <a href="https://openviewpartners.com" target="_blank" rel="noopener">Link</a></li>
-                        </ol>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="thank-you-testimonials">
+            <div class="container">
+                <div class="thank-you-testimonials__header">
+                    <h2 class="thank-you-testimonials__title">What Remotir Can Do for You</h2>
+                    <p class="thank-you-testimonials__subtitle">These are the kinds of results you can expect when your sales motion clicks into place.</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"I was doing sales myself and hitting a wall. Remotir built the outreach, ran demos, and closed deals—all without me needing to hire. We went from zero to $30K in closed ARR in 6 weeks."</p>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/testimonials/avatar-heather.png" alt="Heather" class="testimonial-card__avatar">
+                            <div>
+                                <p class="testimonial-card__name">Heather</p>
+                                <p class="testimonial-card__role">SaaS Founder, Pre-Seed Stage</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"We knew the product worked—we just didn't know how to scale it. Remotir set up our GTM engine and helped us close 3 new mid-market clients in under 8 weeks."</p>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/testimonials/avatar-jordan.png" alt="Jordan" class="testimonial-card__avatar">
+                            <div>
+                                <p class="testimonial-card__name">Jordan</p>
+                                <p class="testimonial-card__role">Co-Founder, SMB SaaS Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"We had leads coming in, but no system to handle them. Remotir rebuilt our funnel, cleaned up our CRM, and gave us weekly deal flow. It finally feels repeatable."</p>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/testimonials/avatar-david.png" alt="David" class="testimonial-card__avatar">
+                            <div>
+                                <p class="testimonial-card__name">David</p>
+                                <p class="testimonial-card__role">Head of Growth, VC-Backed Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"I had a great product but hated selling. Remotir helped me refine my pitch, redesign my landing page, and run cold outreach that actually converted."</p>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/testimonials/avatar-claire.png" alt="Claire" class="testimonial-card__avatar">
+                            <div>
+                                <p class="testimonial-card__name">Claire</p>
+                                <p class="testimonial-card__role">Founder, B2B Platform</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"We had SDRs and tooling, but still no consistency. Remotir stepped in, audited our GTM, and rebuilt it around real data. Pipeline doubled in 2 months."</p>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/testimonials/avatar-priya.png" alt="Priya" class="testimonial-card__avatar">
+                            <div>
+                                <p class="testimonial-card__name">Priya</p>
+                                <p class="testimonial-card__role">RevOps Lead, Series A SaaS Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"We were about to launch but had no sales plan. Remotir built everything—sequences, decks, CRM, even the site copy. We were live and closing demos in 3 weeks."</p>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/testimonials/avatar-luis.png" alt="Luis" class="testimonial-card__avatar">
+                            <div>
+                                <p class="testimonial-card__name">Luis</p>
+                                <p class="testimonial-card__role">Co-Founder, Bootstrapped SaaS Startup</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <nav class="chapter-nav" aria-label="Chapter navigation">
-                    <a href="/insights/0-100k-playbook/channel-physics/" class="chapter-nav__link chapter-nav__link--prev">
-                        <span class="chapter-nav__label">← Previous</span>
-                        <span class="chapter-nav__title">Channel Physics</span>
-                    </a>
-                    <a href="/insights/0-100k-playbook/100k-inflection/" class="chapter-nav__link chapter-nav__link--next">
-                        <span class="chapter-nav__label">Next →</span>
-                        <span class="chapter-nav__title">The $100k Inflection Point</span>
-                    </a>
-                </nav>
             </div>
-        </article>
+        </section>
+        
     </main>
+
         <footer class="footer">
         <div class="container">
             <!-- Top Divider -->
@@ -386,6 +617,7 @@
 
 </body>
 </html>
+
 
 </body>
 </html>
