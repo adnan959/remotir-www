@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meta Playbook - Architecting Demand | Remotir</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="The Meta Playbook - Architecting Demand | Remotir">
+    <meta name="description" content="Meta is a consumer platform that can work for B2B with different architecture. Success requires understanding the Meta Paradox, building proper audiences, and creating creative that bridges consumer context to business action.">
+    <meta name="keywords" content="Meta ads, Facebook ads, B2B advertising, retargeting, lookalike audiences, demand generation">
+    <meta name="author" content="Remotir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.remotir.com/insights/architecting-demand/meta-playbook/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.remotir.com/insights/architecting-demand/meta-playbook/">
+    <meta property="og:title" content="The Meta Playbook - Architecting Demand | Remotir">
+    <meta property="og:description" content="Meta is a consumer platform that can work for B2B with different architecture. Success requires understanding the Meta Paradox and building proper audiences.">
+    <meta property="og:image" content="https://www.remotir.com/assets/og-image.png">
+    <meta property="og:site_name" content="Remotir">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.remotir.com/insights/architecting-demand/meta-playbook/">
+    <meta name="twitter:title" content="The Meta Playbook - Architecting Demand | Remotir">
+    <meta name="twitter:description" content="Meta is a consumer platform that can work for B2B with different architecture. Success requires understanding the Meta Paradox.">
+    <meta name="twitter:image" content="https://www.remotir.com/assets/og-image.png">
+    
+    <!-- Theme -->
+    <meta name="theme-color" content="#05052c">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles/theme.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/pages/insights.css">
+</head>
+<body>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+            <!-- Logo -->
+            <a href="/" class="nav__logo" aria-label="Remotir Home">
+                <img src="/assets/remotir-logo.png" alt="Remotir" height="33">
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="nav__links">
+                <a href="/" class="nav__link">Home</a>
+                <div class="nav__dropdown">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                        Your Problems
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__dropdown-menu">
+                        <a href="/pmf-failure/" class="nav__dropdown-item">PMF Failure</a>
+                        <a href="/unpredictable-pipeline/" class="nav__dropdown-item">Unpredictable Pipeline</a>
+                    </div>
+                </div>
+                <div class="nav__dropdown">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                        Our Solutions
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__dropdown-menu">
+                        <a href="/pmf-sprint/" class="nav__dropdown-item">PMF Sprint</a>
+                        <a href="/predictable-revenue/" class="nav__dropdown-item">Predictable Revenue</a>
+                    </div>
+                </div>
+                <a href="/results/" class="nav__link">Impact</a>
+                
+                <!-- Insights Mega Dropdown -->
+                <div class="nav__mega-dropdown">
+                    <button class="nav__dropdown-trigger nav__dropdown-trigger--active" aria-expanded="false" aria-haspopup="true">
+                        Insights
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__mega-dropdown-panel">
+                        <div class="mega-dropdown__categories">
+                            <a href="/insights/0-100k-playbook/" class="mega-dropdown__category" data-playbook="0-100k">$0 to $100k Playbook<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/insights/architecting-demand/" class="mega-dropdown__category is-active" data-playbook="demand">Architecting Demand<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/insights/pipeline-physics/" class="mega-dropdown__category" data-playbook="pipeline">Pipeline Physics<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <div class="mega-dropdown__divider"></div>
+                            <span class="mega-dropdown__category mega-dropdown__category--disabled">Calculators<span class="mega-dropdown__badge">Soon</span></span>
+                        </div>
+                        <div class="mega-dropdown__chapters" data-playbook="0-100k"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/0-100k-playbook/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/0-100k-playbook/validation-fallacy/" class="mega-dropdown__chapter-link">The Validation Fallacy</a><a href="/insights/0-100k-playbook/zero-dollar-customer/" class="mega-dropdown__chapter-link">Zero Dollar Customer</a><a href="/insights/0-100k-playbook/pricing-the-painkiller/" class="mega-dropdown__chapter-link">Pricing the Painkiller</a><a href="/insights/0-100k-playbook/forensic-persona-audit/" class="mega-dropdown__chapter-link">Forensic Persona Audit</a><a href="/insights/0-100k-playbook/painkiller-narrative/" class="mega-dropdown__chapter-link">Painkiller Narrative</a><a href="/insights/0-100k-playbook/10k-mrr-trap/" class="mega-dropdown__chapter-link">The $10k MRR Trap</a><a href="/insights/0-100k-playbook/founder-led-sales/" class="mega-dropdown__chapter-link">Founder-Led Sales</a><a href="/insights/0-100k-playbook/channel-physics/" class="mega-dropdown__chapter-link">Channel Physics</a><a href="/insights/0-100k-playbook/unit-economics/" class="mega-dropdown__chapter-link">Unit Economics</a><a href="/insights/0-100k-playbook/100k-inflection/" class="mega-dropdown__chapter-link">The $100k Inflection</a><a href="/insights/0-100k-playbook/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/0-100k-playbook/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                        <div class="mega-dropdown__chapters is-visible" data-playbook="demand"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/architecting-demand/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/architecting-demand/leads-delusion/" class="mega-dropdown__chapter-link">The Leads Delusion</a><a href="/insights/architecting-demand/platform-problem/" class="mega-dropdown__chapter-link">The Platform Problem</a><a href="/insights/architecting-demand/agency-problem/" class="mega-dropdown__chapter-link">The Agency Problem</a><a href="/insights/architecting-demand/sales-marketing-divide/" class="mega-dropdown__chapter-link">The Sales-Marketing Divide</a><a href="/insights/architecting-demand/4-lens-framework/" class="mega-dropdown__chapter-link">The 4 Lens Framework</a><a href="/insights/architecting-demand/icp-architecture/" class="mega-dropdown__chapter-link">ICP Architecture</a><a href="/insights/architecting-demand/message-engineering/" class="mega-dropdown__chapter-link">Message Engineering</a><a href="/insights/architecting-demand/channel-selection/" class="mega-dropdown__chapter-link">Channel Selection</a><a href="/insights/architecting-demand/execution-discipline/" class="mega-dropdown__chapter-link">Execution Discipline</a><a href="/insights/architecting-demand/linkedin-playbook/" class="mega-dropdown__chapter-link">LinkedIn Playbook</a><a href="/insights/architecting-demand/meta-playbook/" class="mega-dropdown__chapter-link">Meta Playbook</a><a href="/insights/architecting-demand/google-playbook/" class="mega-dropdown__chapter-link">Google Playbook</a><a href="/insights/architecting-demand/content-engine/" class="mega-dropdown__chapter-link">Content Engine</a><a href="/insights/architecting-demand/demand-audit/" class="mega-dropdown__chapter-link">Demand Audit</a><a href="/insights/architecting-demand/attribution-reality/" class="mega-dropdown__chapter-link">Attribution Reality</a><a href="/insights/architecting-demand/scaling-demand/" class="mega-dropdown__chapter-link">Scaling Demand</a><a href="/insights/architecting-demand/demand-os/" class="mega-dropdown__chapter-link">Demand Operating System</a><a href="/insights/architecting-demand/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/architecting-demand/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                        <div class="mega-dropdown__chapters" data-playbook="pipeline"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/pipeline-physics/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/pipeline-physics/forecast-delusion/" class="mega-dropdown__chapter-link">The Forecast Delusion</a><a href="/insights/pipeline-physics/pipeline-math/" class="mega-dropdown__chapter-link">Pipeline Math</a><a href="/insights/pipeline-physics/velocity-equation/" class="mega-dropdown__chapter-link">The Velocity Equation</a><a href="/insights/pipeline-physics/stage-economics/" class="mega-dropdown__chapter-link">Stage Economics</a><a href="/insights/pipeline-physics/conversion-physics/" class="mega-dropdown__chapter-link">Conversion Physics</a><a href="/insights/pipeline-physics/time-kills-deals/" class="mega-dropdown__chapter-link">Time Kills Deals</a><a href="/insights/pipeline-physics/pipeline-debt/" class="mega-dropdown__chapter-link">Pipeline Debt</a><a href="/insights/pipeline-physics/forecasting-reality/" class="mega-dropdown__chapter-link">Forecasting Reality</a><a href="/insights/pipeline-physics/pipeline-operations/" class="mega-dropdown__chapter-link">Pipeline Operations</a><a href="/insights/pipeline-physics/scaling-pipeline/" class="mega-dropdown__chapter-link">Scaling Pipeline</a><a href="/insights/pipeline-physics/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/pipeline-physics/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="nav__actions">
+                <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="nav__mobile" id="mobile-nav">
+            <a href="/" class="nav__link">Home</a>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Your Problems</span>
+                <a href="/pmf-failure/" class="nav__link">PMF Failure</a>
+                <a href="/unpredictable-pipeline/" class="nav__link">Unpredictable Pipeline</a>
+            </div>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Our Solutions</span>
+                <a href="/pmf-sprint/" class="nav__link">PMF Sprint</a>
+                <a href="/predictable-revenue/" class="nav__link">Predictable Revenue</a>
+            </div>
+            
+            <a href="/results/" class="nav__link">Impact</a>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Insights</span>
+                <a href="/insights/0-100k-playbook/" class="nav__link">$0 to $100k Playbook</a>
+                <a href="/insights/architecting-demand/" class="nav__link">Architecting Demand</a>
+                <a href="/insights/pipeline-physics/" class="nav__link">Pipeline Physics</a>
+            </div>
+            
+            <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
+        </div>
+    </nav>
+
+
+    <main>
+        <div style="height: var(--nav-height);"></div>
+        
+        <article class="chapter-page">
+            <div class="chapter-container">
+                
+                <!-- Breadcrumb -->
+                <nav class="chapter-breadcrumb" aria-label="Breadcrumb">
+                    <a href="/insights/">Insights</a>
+                    <span class="chapter-breadcrumb__separator">/</span>
+                    <a href="/insights/architecting-demand/">Architecting Demand</a>
+                    <span class="chapter-breadcrumb__separator">/</span>
+                    <span class="chapter-breadcrumb__current">The Meta Playbook</span>
+                </nav>
+                
+                <!-- Chapter Header -->
+                <header class="chapter-header">
+                    <span class="chapter-header__label">Part 3: Channel Playbooks · Chapter 11</span>
+                    <h1 class="chapter-header__title">The Meta Playbook</h1>
+                    
+                    <div class="chapter-header__meta">
+                        <span class="chapter-header__meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            11 min read
+                        </span>
+                    </div>
+                    
+                    <p class="chapter-header__summary">
+                        <strong>Core Argument:</strong> Meta is a consumer platform that can work for B2B with different architecture. Success requires understanding the Meta Paradox, building proper audiences, and creating creative that bridges consumer context to business action.
+                    </p>
+                </header>
+                
+                <!-- Chapter Content -->
+                <div class="chapter-content">
+                    
+                    <h2>The Meta Paradox</h2>
+                    
+                    <p>Meta (Facebook and Instagram) is built for consumer advertising. The platform, the algorithms, and the user behavior are optimized for B2C transactions.</p>
+                    
+                    <p>And yet, B2B companies successfully generate pipeline on Meta every day.</p>
+                    
+                    <p><strong>The Meta Paradox:</strong> A platform designed for consumer impulse can drive considered B2B purchases when architecture accounts for the context gap.</p>
+                    
+                    <p>The resolution lies in understanding what Meta does well and what it cannot do:</p>
+                    
+                    <p><strong>Meta does well:</strong></p>
+                    <ul>
+                        <li>Massive reach at low cost</li>
+                        <li>Sophisticated retargeting capabilities</li>
+                        <li>Visual/video creative optimization</li>
+                        <li>Lookalike audience modeling</li>
+                    </ul>
+                    
+                    <p><strong>Meta cannot do:</strong></p>
+                    <ul>
+                        <li>Professional attribute targeting (no job titles)</li>
+                        <li>High-intent cold prospecting for B2B</li>
+                        <li>Direct comparison to LinkedIn's professional context</li>
+                    </ul>
+                    
+                    <p><strong>The implication:</strong> Meta is a B2B channel for retargeting, lookalikes, and creative-driven awareness. It is not a B2B channel for cold prospecting to job titles.</p>
+                    
+                    <hr>
+                    
+                    <h2>Meta Economics</h2>
+                    
+                    <h3>Cost Advantage</h3>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Meta</th>
+                                <th>LinkedIn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CPM</td>
+                                <td>$8-25</td>
+                                <td>$30-100</td>
+                            </tr>
+                            <tr>
+                                <td>CPC</td>
+                                <td>$1-4</td>
+                                <td>$5-15</td>
+                            </tr>
+                            <tr>
+                                <td>CPL</td>
+                                <td>$30-100</td>
+                                <td>$75-250</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>Meta costs 1/3 to 1/5 of LinkedIn per impression, click, and lead.</p>
+                    
+                    <h3>The Quality Trade-Off</h3>
+                    
+                    <p>Lower costs come with lower quality signals:</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Quality Factor</th>
+                                <th>Meta</th>
+                                <th>LinkedIn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Professional targeting</td>
+                                <td>Limited</td>
+                                <td>Extensive</td>
+                            </tr>
+                            <tr>
+                                <td>Professional mindset</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Intent signals</td>
+                                <td>Behavioral</td>
+                                <td>Professional + Behavioral</td>
+                            </tr>
+                            <tr>
+                                <td>Lead quality (typical)</td>
+                                <td>Lower</td>
+                                <td>Higher</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>The math that matters:</strong></p>
+                    
+                    <p>Meta CPL is $50. LinkedIn CPL is $150. Meta looks 3x cheaper.</p>
+                    
+                    <p>But Meta lead-to-opportunity is 5%. LinkedIn is 12%.</p>
+                    
+                    <ul>
+                        <li>Meta cost per opportunity: $1,000</li>
+                        <li>LinkedIn cost per opportunity: $1,250</li>
+                    </ul>
+                    
+                    <p>The gap narrows dramatically when conversion is factored.</p>
+                    
+                    <p><strong>When Meta wins:</strong> Retargeting (audience already qualified), lookalikes from high-quality seeds, lower-ACV products, visual products.</p>
+                    
+                    <p><strong>When LinkedIn wins:</strong> Cold prospecting to specific titles, high-ACV products, complex sales.</p>
+                    
+                    <hr>
+                    
+                    <h2>Meta Audience Architecture for B2B</h2>
+                    
+                    <p>Since Meta lacks professional targeting, audience quality must come from other sources.</p>
+                    
+                    <h3>Audience Type 1: Website Custom Audiences</h3>
+                    
+                    <p>Your website visitors are pre-qualified (they found you somehow). Retargeting them on Meta is high-efficiency B2B advertising.</p>
+                    
+                    <p><strong>Audience segments:</strong></p>
+                    <ul>
+                        <li>All website visitors (30, 60, 90 days)</li>
+                        <li>High-intent page visitors (pricing, demo, contact pages)</li>
+                        <li>Content consumers (blog readers, resource downloaders)</li>
+                        <li>Product page visitors</li>
+                        <li>Cart/checkout abandoners (if applicable)</li>
+                    </ul>
+                    
+                    <h3>Audience Type 2: Customer List Custom Audiences</h3>
+                    
+                    <p>Upload your CRM data to Meta for targeting.</p>
+                    
+                    <p><strong>Effective lists:</strong></p>
+                    <ul>
+                        <li>Existing customers (for upsell, cross-sell, referral)</li>
+                        <li>Qualified leads not yet closed</li>
+                        <li>Webinar/event registrants</li>
+                        <li>Newsletter subscribers</li>
+                        <li>Target account contact lists</li>
+                    </ul>
+                    
+                    <p><strong>Match rates:</strong> Expect 30-60% match rates. Business emails match worse than personal emails.</p>
+                    
+                    <h3>Audience Type 3: Lookalike Audiences</h3>
+                    
+                    <p>Meta's lookalike modeling finds users similar to your seed audience.</p>
+                    
+                    <p><strong>Seed quality is everything:</strong></p>
+                    <ul>
+                        <li>Best: Closed-won customers</li>
+                        <li>Good: Qualified opportunities</li>
+                        <li>Acceptable: Engaged leads (MQLs with engagement)</li>
+                        <li>Poor: All leads (includes garbage)</li>
+                    </ul>
+                    
+                    <p><strong>Lookalike percentage:</strong></p>
+                    <ul>
+                        <li>1%: Most similar, smallest audience</li>
+                        <li>2-5%: Balance of similarity and reach</li>
+                        <li>5-10%: Larger reach, looser similarity</li>
+                    </ul>
+                    
+                    <p><strong>Recommendation:</strong> Start with 1-2% lookalikes from customer seed. Expand percentage only after validating conversion.</p>
+                    
+                    <h3>Audience Stacking Strategy</h3>
+                    
+                    <p>Combine audience types for B2B precision:</p>
+                    
+                    <p><strong>Example Stack:</strong></p>
+                    <ul>
+                        <li>Lookalike (1%) of customers</li>
+                        <li>AND interested in "B2B Marketing" or "SaaS"</li>
+                        <li>AND behavior: Business page admin</li>
+                        <li>EXCLUDE: Existing customers</li>
+                    </ul>
+                    
+                    <p>The stack narrows the lookalike to more B2B-relevant users.</p>
+                    
+                    <hr>
+                    
+                    <h2>Meta Creative Strategy for B2B</h2>
+                    
+                    <p>Consumer platform requires consumer-grade creative with B2B messaging.</p>
+                    
+                    <h3>Video Is Mandatory</h3>
+                    
+                    <p>Static images can work on LinkedIn where users expect professional content. On Meta, video dramatically outperforms static for B2B.</p>
+                    
+                    <p><strong>Video performance advantage:</strong> 2-3x higher engagement, 30-50% lower CPL in most B2B contexts.</p>
+                    
+                    <p><strong>Video Requirements:</strong></p>
+                    <ul>
+                        <li>Hook in first 3 seconds (or lose viewer)</li>
+                        <li>Optimized for sound-off (captions mandatory)</li>
+                        <li>Vertical format for Stories (9:16)</li>
+                        <li>Square or vertical for Feed (1:1 or 4:5)</li>
+                        <li>15-60 seconds optimal length</li>
+                    </ul>
+                    
+                    <h3>The Hook-First Structure</h3>
+                    
+                    <p><strong>First 3 seconds:</strong> Pattern interrupt + pain statement</p>
+                    <ul>
+                        <li>"Still spending Monday mornings in spreadsheets?"</li>
+                        <li>"Your sales team is wasting 10 hours a week on this."</li>
+                        <li>"This is why your pipeline is unpredictable."</li>
+                    </ul>
+                    
+                    <p><strong>Seconds 3-15:</strong> Expand the pain, hint at solution</p>
+                    
+                    <p><strong>Seconds 15-45:</strong> Solution framing and proof</p>
+                    
+                    <p><strong>Final seconds:</strong> Direct CTA</p>
+                    
+                    <h3>Creative Types That Work for B2B on Meta</h3>
+                    
+                    <p><strong>Talking head video:</strong> Founder, expert, or customer speaking directly to camera. Authentic, personal, breaks corporate pattern.</p>
+                    
+                    <p><strong>Screen capture with voiceover:</strong> Show the product solving the problem. Effective for software products.</p>
+                    
+                    <p><strong>Customer testimonial:</strong> Real customer describing results. Most credible format.</p>
+                    
+                    <p><strong>Animated explainer:</strong> Motion graphics explaining concept. Works for complex products.</p>
+                    
+                    <hr>
+                    
+                    <h2>Meta Campaign Architecture</h2>
+                    
+                    <h3>Funnel-Based Approach</h3>
+                    
+                    <p><strong>Cold (Lookalikes + Interests):</strong></p>
+                    <ul>
+                        <li>Objective: Traffic or Lead Generation</li>
+                        <li>Creative: Educational, awareness-building</li>
+                        <li>Offer: Content, webinar, assessment</li>
+                        <li>Budget: 40-50% of total</li>
+                    </ul>
+                    
+                    <p><strong>Warm (Website visitors, engagers):</strong></p>
+                    <ul>
+                        <li>Objective: Conversions</li>
+                        <li>Creative: Solution-focused, proof-heavy</li>
+                        <li>Offer: Demo, consultation, trial</li>
+                        <li>Budget: 30-40% of total</li>
+                    </ul>
+                    
+                    <p><strong>Hot (High-intent pages, form abandoners):</strong></p>
+                    <ul>
+                        <li>Objective: Conversions</li>
+                        <li>Creative: Urgency, direct CTA</li>
+                        <li>Offer: Demo, limited-time offer</li>
+                        <li>Budget: 15-25% of total</li>
+                    </ul>
+                    
+                    <h3>Budget Allocation</h3>
+                    
+                    <p><strong>Minimum viable spend:</strong> $5,000-10,000/month</p>
+                    
+                    <p><strong>Testing phase:</strong> First 4-6 weeks, allocate 50% to testing audiences and creative.</p>
+                    
+                    <p><strong>Scaling phase:</strong> Concentrate on winning combinations, expand lookalike percentages gradually.</p>
+                    
+                    <hr>
+                    
+                    <h2>Case Study: Meta for B2B</h2>
+                    
+                    <p>A Remotir client (Series A SaaS, $6M ARR, $12k ACV) wanted to supplement LinkedIn with a lower-cost channel.</p>
+                    
+                    <p><strong>The Approach:</strong></p>
+                    
+                    <p>Rather than cold prospecting on Meta (which fails for B2B), we built a retargeting and lookalike architecture:</p>
+                    
+                    <p><strong>Audience Structure:</strong></p>
+                    <ul>
+                        <li>Retargeting: Website visitors (30 days), content downloaders</li>
+                        <li>Lookalike 1%: Based on closed-won customers (487 records)</li>
+                        <li>Lookalike 2%: Based on qualified leads with high engagement</li>
+                    </ul>
+                    
+                    <p><strong>Creative:</strong></p>
+                    <ul>
+                        <li>Talking head video from CEO discussing common pain</li>
+                        <li>Customer testimonial video (30 seconds)</li>
+                        <li>Carousel showing before/after workflow</li>
+                    </ul>
+                    
+                    <p><strong>Budget:</strong> $6,000/month (vs. $18,000 on LinkedIn)</p>
+                    
+                    <p><strong>Results (6 months):</strong></p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Meta</th>
+                                <th>LinkedIn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monthly spend</td>
+                                <td>$6,000</td>
+                                <td>$18,000</td>
+                            </tr>
+                            <tr>
+                                <td>Leads</td>
+                                <td>95</td>
+                                <td>108</td>
+                            </tr>
+                            <tr>
+                                <td>CPL</td>
+                                <td>$63</td>
+                                <td>$167</td>
+                            </tr>
+                            <tr>
+                                <td>Lead-to-Opp</td>
+                                <td>8%</td>
+                                <td>14%</td>
+                            </tr>
+                            <tr>
+                                <td>Opportunities</td>
+                                <td>7.6</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Cost per Opp</td>
+                                <td>$789</td>
+                                <td>$1,200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>The insight:</strong> Meta produced lower-quality leads but at sufficient volume and low enough cost that cost per opportunity was actually better than LinkedIn. The channel became a valuable complement, not a replacement.</p>
+                    
+                    <hr>
+                    
+                    <h2>Conclusion: Context Requires Architecture</h2>
+                    
+                    <p>Meta is not LinkedIn. Applying LinkedIn strategy to Meta fails.</p>
+                    
+                    <p>Meta is a consumer platform where B2B can work with the right architecture:</p>
+                    <ul>
+                        <li>Retargeting qualified visitors</li>
+                        <li>Lookalikes from quality seeds</li>
+                        <li>Video-first creative</li>
+                        <li>Funnel-based campaign structure</li>
+                    </ul>
+                    
+                    <p>The Meta Paradox resolves when you accept what the platform is and build architecture accordingly.</p>
+                    
+                    <p><strong>Do not ask Meta to find B2B buyers cold.</strong> It cannot.</p>
+                    
+                    <p><strong>Ask Meta to re-engage people who have shown interest and find similar people.</strong> It excels at this.</p>
+                    
+                    <p>With proper architecture, Meta becomes a cost-efficient complement to LinkedIn and other channels. Without it, Meta becomes a budget drain producing consumer-quality leads.</p>
+                    
+                    <p><strong>Context is everything. Architecture accounts for context.</strong></p>
+                    
+                    <!-- Key Frameworks -->
+                    <div class="chapter-frameworks">
+                        <h3 class="chapter-frameworks__title">Key Frameworks</h3>
+                        <div class="chapter-frameworks__list">
+                            <div class="chapter-frameworks__item">
+                                <div class="chapter-frameworks__item-title">The Meta Paradox</div>
+                                <div class="chapter-frameworks__item-desc">A consumer platform that can drive B2B results when architecture accounts for the context gap between consumer mindset and business purchasing.</div>
+                            </div>
+                            <div class="chapter-frameworks__item">
+                                <div class="chapter-frameworks__item-title">Meta Audience Architecture</div>
+                                <div class="chapter-frameworks__item-desc">The four audience types for B2B on Meta: Website Custom Audiences, Customer List Custom Audiences, Lookalike Audiences, and Interest/Behavior Targeting.</div>
+                            </div>
+                            <div class="chapter-frameworks__item">
+                                <div class="chapter-frameworks__item-title">Audience Stacking</div>
+                                <div class="chapter-frameworks__item-desc">Combining audience types (lookalike + interest + behavior) to improve B2B precision on a platform without professional targeting.</div>
+                            </div>
+                            <div class="chapter-frameworks__item">
+                                <div class="chapter-frameworks__item-title">Hook-First Structure</div>
+                                <div class="chapter-frameworks__item-desc">Video creative structure for Meta: 3-second hook, pain expansion, solution framing, direct CTA. Optimized for sound-off, mobile-first consumption.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- References -->
+                    <div class="chapter-references">
+                        <h3 class="chapter-references__title">References</h3>
+                        <ol class="chapter-references__list">
+                            <li><strong>Meta (2024)</strong>. <em>B2B Marketing on Meta Platforms.</em> <a href="https://business.facebook.com" target="_blank" rel="noopener">Link</a></li>
+                            <li><strong>Metadata.io (2024)</strong>. <em>Meta Ads Benchmarks for B2B.</em> <a href="https://metadata.io" target="_blank" rel="noopener">Link</a></li>
+                            <li><strong>AdEspresso (2024)</strong>. <em>Facebook Ads for B2B Guide.</em> <a href="https://adespresso.com" target="_blank" rel="noopener">Link</a></li>
+                        </ol>
+                    </div>
+                    
+                </div>
+                
+                <!-- Chapter Navigation -->
+                <nav class="chapter-nav" aria-label="Chapter navigation">
+                    <a href="/insights/architecting-demand/linkedin-playbook/" class="chapter-nav__link chapter-nav__link--prev">
+                        <span class="chapter-nav__label">← Previous</span>
+                        <span class="chapter-nav__title">The LinkedIn Playbook</span>
+                    </a>
+                    <a href="/insights/architecting-demand/google-playbook/" class="chapter-nav__link chapter-nav__link--next">
+                        <span class="chapter-nav__label">Next →</span>
+                        <span class="chapter-nav__title">The Google Playbook</span>
+                    </a>
+                </nav>
+                
+            </div>
+        </article>
+    </main>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <!-- Brand Column -->
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="Remotir Home">
+                        <img src="/assets/remotir-logo.png" alt="Remotir" height="33">
+                    </a>
+                    <p class="footer__description">Remotir is a GTM Infrastructure Firm. We design, install, and operate revenue systems that replace unvalidated burn with market-proven signal.</p>
+                </div>
+                
+                <!-- Link Columns -->
+                <div class="footer__columns">
+                    <!-- Solutions -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Solutions</h4>
+                        <div class="footer__column-links">
+                            <a href="/pmf-sprint/" class="footer__link">PMF Sprint</a>
+                            <a href="/predictable-revenue/" class="footer__link">Predictable Revenue</a>
+                            <a href="/pmf-failure/" class="footer__link">PMF Failure</a>
+                            <a href="/unpredictable-pipeline/" class="footer__link">Unpredictable Pipeline</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Studies -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Case Studies</h4>
+                        <div class="footer__column-links">
+                            <a href="/results/" class="footer__link">View All Results</a>
+                            <a href="/case-study-right-to-play/" class="footer__link">£20M Series A Validation</a>
+                            <a href="/case-study-efficiency-gain/" class="footer__link">66% Efficiency Gain</a>
+                            <a href="/case-study-d2c-transformation/" class="footer__link">600% D2C Volume Uplift</a>
+                            <a href="/case-study-pmf-pivot/" class="footer__link">137x ACV Increase</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Company -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Company</h4>
+                        <div class="footer__column-links">
+                            <a href="/insights/" class="footer__link">Insights</a>
+                            <a href="/schedule/" class="footer__link">Schedule a Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
+</body>
+</html>

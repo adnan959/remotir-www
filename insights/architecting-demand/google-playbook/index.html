@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Google Playbook - Architecting Demand | Remotir</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="The Google Playbook - Architecting Demand | Remotir">
+    <meta name="description" content="Google captures demand that already exists. It does not create demand. Success requires understanding the Intent Hierarchy, winning keyword economics, and building landing pages that convert searchers to pipeline.">
+    <meta name="keywords" content="Google Ads, search advertising, B2B marketing, keyword strategy, intent hierarchy, demand capture">
+    <meta name="author" content="Remotir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.remotir.com/insights/architecting-demand/google-playbook/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.remotir.com/insights/architecting-demand/google-playbook/">
+    <meta property="og:title" content="The Google Playbook - Architecting Demand | Remotir">
+    <meta property="og:description" content="Google captures demand that already exists. Success requires understanding the Intent Hierarchy and winning keyword economics.">
+    <meta property="og:image" content="https://www.remotir.com/assets/og-image.png">
+    <meta property="og:site_name" content="Remotir">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.remotir.com/insights/architecting-demand/google-playbook/">
+    <meta name="twitter:title" content="The Google Playbook - Architecting Demand | Remotir">
+    <meta name="twitter:description" content="Google captures demand that already exists. Success requires understanding the Intent Hierarchy and winning keyword economics.">
+    <meta name="twitter:image" content="https://www.remotir.com/assets/og-image.png">
+    
+    <!-- Theme -->
+    <meta name="theme-color" content="#05052c">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles/theme.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/pages/insights.css">
+</head>
+<body>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+            <!-- Logo -->
+            <a href="/" class="nav__logo" aria-label="Remotir Home">
+                <img src="/assets/remotir-logo.png" alt="Remotir" height="33">
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="nav__links">
+                <a href="/" class="nav__link">Home</a>
+                <div class="nav__dropdown">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                        Your Problems
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__dropdown-menu">
+                        <a href="/pmf-failure/" class="nav__dropdown-item">PMF Failure</a>
+                        <a href="/unpredictable-pipeline/" class="nav__dropdown-item">Unpredictable Pipeline</a>
+                    </div>
+                </div>
+                <div class="nav__dropdown">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                        Our Solutions
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__dropdown-menu">
+                        <a href="/pmf-sprint/" class="nav__dropdown-item">PMF Sprint</a>
+                        <a href="/predictable-revenue/" class="nav__dropdown-item">Predictable Revenue</a>
+                    </div>
+                </div>
+                <a href="/results/" class="nav__link">Impact</a>
+                
+                <!-- Insights Mega Dropdown -->
+                <div class="nav__mega-dropdown">
+                    <button class="nav__dropdown-trigger nav__dropdown-trigger--active" aria-expanded="false" aria-haspopup="true">
+                        Insights
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__mega-dropdown-panel">
+                        <div class="mega-dropdown__categories">
+                            <a href="/insights/0-100k-playbook/" class="mega-dropdown__category" data-playbook="0-100k">$0 to $100k Playbook<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/insights/architecting-demand/" class="mega-dropdown__category is-active" data-playbook="demand">Architecting Demand<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/insights/pipeline-physics/" class="mega-dropdown__category" data-playbook="pipeline">Pipeline Physics<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <div class="mega-dropdown__divider"></div>
+                            <span class="mega-dropdown__category mega-dropdown__category--disabled">Calculators<span class="mega-dropdown__badge">Soon</span></span>
+                        </div>
+                        <div class="mega-dropdown__chapters" data-playbook="0-100k"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/0-100k-playbook/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/0-100k-playbook/validation-fallacy/" class="mega-dropdown__chapter-link">The Validation Fallacy</a><a href="/insights/0-100k-playbook/zero-dollar-customer/" class="mega-dropdown__chapter-link">Zero Dollar Customer</a><a href="/insights/0-100k-playbook/pricing-the-painkiller/" class="mega-dropdown__chapter-link">Pricing the Painkiller</a><a href="/insights/0-100k-playbook/forensic-persona-audit/" class="mega-dropdown__chapter-link">Forensic Persona Audit</a><a href="/insights/0-100k-playbook/painkiller-narrative/" class="mega-dropdown__chapter-link">Painkiller Narrative</a><a href="/insights/0-100k-playbook/10k-mrr-trap/" class="mega-dropdown__chapter-link">The $10k MRR Trap</a><a href="/insights/0-100k-playbook/founder-led-sales/" class="mega-dropdown__chapter-link">Founder-Led Sales</a><a href="/insights/0-100k-playbook/channel-physics/" class="mega-dropdown__chapter-link">Channel Physics</a><a href="/insights/0-100k-playbook/unit-economics/" class="mega-dropdown__chapter-link">Unit Economics</a><a href="/insights/0-100k-playbook/100k-inflection/" class="mega-dropdown__chapter-link">The $100k Inflection</a><a href="/insights/0-100k-playbook/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/0-100k-playbook/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                        <div class="mega-dropdown__chapters is-visible" data-playbook="demand"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/architecting-demand/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/architecting-demand/leads-delusion/" class="mega-dropdown__chapter-link">The Leads Delusion</a><a href="/insights/architecting-demand/platform-problem/" class="mega-dropdown__chapter-link">The Platform Problem</a><a href="/insights/architecting-demand/agency-problem/" class="mega-dropdown__chapter-link">The Agency Problem</a><a href="/insights/architecting-demand/sales-marketing-divide/" class="mega-dropdown__chapter-link">The Sales-Marketing Divide</a><a href="/insights/architecting-demand/4-lens-framework/" class="mega-dropdown__chapter-link">The 4 Lens Framework</a><a href="/insights/architecting-demand/icp-architecture/" class="mega-dropdown__chapter-link">ICP Architecture</a><a href="/insights/architecting-demand/message-engineering/" class="mega-dropdown__chapter-link">Message Engineering</a><a href="/insights/architecting-demand/channel-selection/" class="mega-dropdown__chapter-link">Channel Selection</a><a href="/insights/architecting-demand/execution-discipline/" class="mega-dropdown__chapter-link">Execution Discipline</a><a href="/insights/architecting-demand/linkedin-playbook/" class="mega-dropdown__chapter-link">LinkedIn Playbook</a><a href="/insights/architecting-demand/meta-playbook/" class="mega-dropdown__chapter-link">Meta Playbook</a><a href="/insights/architecting-demand/google-playbook/" class="mega-dropdown__chapter-link">Google Playbook</a><a href="/insights/architecting-demand/content-engine/" class="mega-dropdown__chapter-link">Content Engine</a><a href="/insights/architecting-demand/demand-audit/" class="mega-dropdown__chapter-link">Demand Audit</a><a href="/insights/architecting-demand/attribution-reality/" class="mega-dropdown__chapter-link">Attribution Reality</a><a href="/insights/architecting-demand/scaling-demand/" class="mega-dropdown__chapter-link">Scaling Demand</a><a href="/insights/architecting-demand/demand-os/" class="mega-dropdown__chapter-link">Demand Operating System</a><a href="/insights/architecting-demand/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/architecting-demand/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                        <div class="mega-dropdown__chapters" data-playbook="pipeline"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/pipeline-physics/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/pipeline-physics/forecast-delusion/" class="mega-dropdown__chapter-link">The Forecast Delusion</a><a href="/insights/pipeline-physics/pipeline-math/" class="mega-dropdown__chapter-link">Pipeline Math</a><a href="/insights/pipeline-physics/velocity-equation/" class="mega-dropdown__chapter-link">The Velocity Equation</a><a href="/insights/pipeline-physics/stage-economics/" class="mega-dropdown__chapter-link">Stage Economics</a><a href="/insights/pipeline-physics/conversion-physics/" class="mega-dropdown__chapter-link">Conversion Physics</a><a href="/insights/pipeline-physics/time-kills-deals/" class="mega-dropdown__chapter-link">Time Kills Deals</a><a href="/insights/pipeline-physics/pipeline-debt/" class="mega-dropdown__chapter-link">Pipeline Debt</a><a href="/insights/pipeline-physics/forecasting-reality/" class="mega-dropdown__chapter-link">Forecasting Reality</a><a href="/insights/pipeline-physics/pipeline-operations/" class="mega-dropdown__chapter-link">Pipeline Operations</a><a href="/insights/pipeline-physics/scaling-pipeline/" class="mega-dropdown__chapter-link">Scaling Pipeline</a><a href="/insights/pipeline-physics/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/pipeline-physics/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="nav__actions">
+                <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="nav__mobile" id="mobile-nav">
+            <a href="/" class="nav__link">Home</a>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Your Problems</span>
+                <a href="/pmf-failure/" class="nav__link">PMF Failure</a>
+                <a href="/unpredictable-pipeline/" class="nav__link">Unpredictable Pipeline</a>
+            </div>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Our Solutions</span>
+                <a href="/pmf-sprint/" class="nav__link">PMF Sprint</a>
+                <a href="/predictable-revenue/" class="nav__link">Predictable Revenue</a>
+            </div>
+            
+            <a href="/results/" class="nav__link">Impact</a>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Insights</span>
+                <a href="/insights/0-100k-playbook/" class="nav__link">$0 to $100k Playbook</a>
+                <a href="/insights/architecting-demand/" class="nav__link">Architecting Demand</a>
+                <a href="/insights/pipeline-physics/" class="nav__link">Pipeline Physics</a>
+            </div>
+            
+            <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
+        </div>
+    </nav>
+
+
+    <main>
+        <div style="height: var(--nav-height);"></div>
+        
+        <article class="chapter-page">
+            <div class="chapter-container">
+                
+                <!-- Breadcrumb -->
+                <nav class="chapter-breadcrumb" aria-label="Breadcrumb">
+                    <a href="/insights/">Insights</a>
+                    <span class="chapter-breadcrumb__separator">/</span>
+                    <a href="/insights/architecting-demand/">Architecting Demand</a>
+                    <span class="chapter-breadcrumb__separator">/</span>
+                    <span class="chapter-breadcrumb__current">The Google Playbook</span>
+                </nav>
+                
+                <!-- Chapter Header -->
+                <header class="chapter-header">
+                    <span class="chapter-header__label">Part 3: Channel Playbooks · Chapter 12</span>
+                    <h1 class="chapter-header__title">The Google Playbook</h1>
+                    
+                    <div class="chapter-header__meta">
+                        <span class="chapter-header__meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            11 min read
+                        </span>
+                    </div>
+                    
+                    <p class="chapter-header__summary">
+                        <strong>Core Argument:</strong> Google captures demand that already exists. It does not create demand. Success requires understanding the Intent Hierarchy, winning keyword economics, and building landing pages that convert searchers to pipeline.
+                    </p>
+                </header>
+                
+                <!-- Chapter Content -->
+                <div class="chapter-content">
+                    
+                    <h2>The Demand Capture Channel</h2>
+                    
+                    <p>LinkedIn and Meta create demand. They reach people who are not actively looking and introduce them to solutions.</p>
+                    
+                    <p>Google captures demand. It reaches people who are already looking and converts their search into action.</p>
+                    
+                    <p><strong>This distinction is fundamental.</strong></p>
+                    
+                    <p>Creating demand is hard. You must interrupt, educate, and persuade people who were not thinking about your category.</p>
+                    
+                    <p>Capturing demand is efficient. You reach people who have already decided they have a problem and are actively seeking solutions.</p>
+                    
+                    <p><strong>Google's advantage:</strong> When someone searches "B2B demand generation software," they have self-identified as a potential buyer. The hard work of demand creation has already happened elsewhere.</p>
+                    
+                    <p><strong>Google's limitation:</strong> You can only capture demand that exists. If no one searches for your category, Google cannot help you.</p>
+                    
+                    <hr>
+                    
+                    <h2>The Intent Hierarchy</h2>
+                    
+                    <p>Not all searches indicate equal buying intent. The <strong>Intent Hierarchy</strong> classifies searches by proximity to purchase.</p>
+                    
+                    <h3>Level 1: Transactional (Highest Intent)</h3>
+                    
+                    <p>Searches that indicate readiness to buy or evaluate.</p>
+                    
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>"demand generation software pricing"</li>
+                        <li>"best B2B marketing automation tools"</li>
+                        <li>"[competitor name] alternatives"</li>
+                        <li>"buy [product category]"</li>
+                        <li>"[product category] demo"</li>
+                    </ul>
+                    
+                    <p><strong>Characteristics:</strong> Lowest volume, highest CPC (most competition), highest conversion rate, shortest path to pipeline.</p>
+                    
+                    <p><strong>Strategy:</strong> Bid aggressively. High CPCs are acceptable because conversion justifies cost.</p>
+                    
+                    <h3>Level 2: Commercial Investigation</h3>
+                    
+                    <p>Searches that indicate active evaluation.</p>
+                    
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>"demand generation software comparison"</li>
+                        <li>"what is [product category]"</li>
+                        <li>"[your product] vs [competitor]"</li>
+                        <li>"[product category] reviews"</li>
+                    </ul>
+                    
+                    <p><strong>Strategy:</strong> Target with educational content. Capture leads for nurture.</p>
+                    
+                    <h3>Level 3: Informational (Lower Intent)</h3>
+                    
+                    <p>Searches for knowledge, not necessarily tied to purchase.</p>
+                    
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>"what is demand generation"</li>
+                        <li>"how to generate B2B leads"</li>
+                        <li>"marketing automation best practices"</li>
+                    </ul>
+                    
+                    <p><strong>Strategy:</strong> Use for top-of-funnel content and remarketing building. Do not expect direct conversions.</p>
+                    
+                    <hr>
+                    
+                    <h2>Google Keyword Economics</h2>
+                    
+                    <p>Keyword selection is an economic decision, not a creative one.</p>
+                    
+                    <h3>The Keyword Viability Formula</h3>
+                    
+                    <p><strong>Keyword CAC = CPC ÷ CTR ÷ Landing Page Conversion ÷ Lead-to-Customer Rate</strong></p>
+                    
+                    <p><strong>Example calculation:</strong></p>
+                    <ul>
+                        <li>1,000 impressions</li>
+                        <li>3% CTR = 30 clicks</li>
+                        <li>Cost = 30 × $15 = $450</li>
+                        <li>5% landing page conversion = 1.5 leads</li>
+                        <li>8% lead-to-customer = 0.12 customers</li>
+                        <li>CAC = $450 ÷ 0.12 = $3,750</li>
+                    </ul>
+                    
+                    <p><strong>Viability test:</strong> Is $3,750 CAC acceptable for your ACV and LTV/CAC targets?</p>
+                    
+                    <hr>
+                    
+                    <h2>Match Types and Negative Keywords</h2>
+                    
+                    <p>Match types determine which searches trigger your ads.</p>
+                    
+                    <h3>Match Type Hierarchy</h3>
+                    
+                    <p><strong>Exact Match [keyword]:</strong> Triggers only for that keyword (and close variants). Highest control, lowest reach. Best for high-intent, proven keywords.</p>
+                    
+                    <p><strong>Phrase Match "keyword":</strong> Triggers when search contains the phrase. Moderate control, moderate reach. Good for most B2B campaigns.</p>
+                    
+                    <p><strong>Broad Match keyword:</strong> Triggers for "related" searches (Google decides). Lowest control, highest reach. Dangerous for B2B; use with caution.</p>
+                    
+                    <h3>The Broad Match Trap</h3>
+                    
+                    <p>Google's default is Broad Match. Google wants you to use Broad Match because it expands your spend.</p>
+                    
+                    <p><strong>Example:</strong> Keyword "B2B marketing software" with Broad Match might trigger for:</p>
+                    <ul>
+                        <li>"marketing degree programs"</li>
+                        <li>"B2B meaning"</li>
+                        <li>"software engineer jobs"</li>
+                        <li>"marketing jobs"</li>
+                    </ul>
+                    
+                    <p>Each irrelevant click costs money and produces nothing.</p>
+                    
+                    <p><strong>Defense:</strong> Use Phrase or Exact Match for most B2B campaigns.</p>
+                    
+                    <h3>Essential Negative Keywords</h3>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Examples</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jobs/Careers</td>
+                                <td>jobs, careers, salary, hiring, resume</td>
+                            </tr>
+                            <tr>
+                                <td>Education</td>
+                                <td>courses, certification, degree, training</td>
+                            </tr>
+                            <tr>
+                                <td>Free</td>
+                                <td>free, cheap, open source, trial</td>
+                            </tr>
+                            <tr>
+                                <td>DIY</td>
+                                <td>DIY, template, homemade</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>Process:</strong> Review Search Query Report weekly. Add irrelevant queries as negatives continuously.</p>
+                    
+                    <hr>
+                    
+                    <h2>Campaign Structure</h2>
+                    
+                    <h3>Recommended Structure for B2B</h3>
+                    
+                    <p><strong>Campaign 1: Brand</strong></p>
+                    <ul>
+                        <li>Keywords: Your brand name, product names</li>
+                        <li>Match type: Exact and Phrase</li>
+                        <li>Budget: 5-10% of total</li>
+                        <li>Goal: Defend brand searches, low CPC capture</li>
+                    </ul>
+                    
+                    <p><strong>Campaign 2: High-Intent Non-Brand</strong></p>
+                    <ul>
+                        <li>Keywords: Transactional, competitor alternatives</li>
+                        <li>Match type: Exact and Phrase</li>
+                        <li>Budget: 50-60% of total</li>
+                        <li>Goal: Capture high-intent demand</li>
+                    </ul>
+                    
+                    <p><strong>Campaign 3: Commercial Investigation</strong></p>
+                    <ul>
+                        <li>Keywords: Comparisons, reviews, solutions</li>
+                        <li>Match type: Phrase</li>
+                        <li>Budget: 25-35% of total</li>
+                        <li>Goal: Capture mid-funnel researchers</li>
+                    </ul>
+                    
+                    <hr>
+                    
+                    <h2>Ad Copy Excellence</h2>
+                    
+                    <h3>B2B Ad Copy Principles</h3>
+                    
+                    <p><strong>Include the keyword:</strong> Match the search query in headline. Improves relevance and Quality Score.</p>
+                    
+                    <p><strong>Lead with benefit, not feature:</strong></p>
+                    <ul>
+                        <li>Feature: "AI-Powered Analytics"</li>
+                        <li>Benefit: "See Why Deals Stall in Seconds"</li>
+                    </ul>
+                    
+                    <p><strong>Use numbers:</strong> Specificity builds credibility.</p>
+                    <ul>
+                        <li>"Reduce Close Time by 40%"</li>
+                        <li>"Join 500+ B2B Companies"</li>
+                    </ul>
+                    
+                    <p><strong>Differentiate from competitors:</strong> Search results show multiple ads. Why click yours?</p>
+                    
+                    <hr>
+                    
+                    <h2>Landing Page Alignment</h2>
+                    
+                    <p>The landing page must continue the promise of the ad.</p>
+                    
+                    <h3>The Alignment Principle</h3>
+                    
+                    <p><strong>What they searched → What the ad said → What the page delivers</strong></p>
+                    
+                    <p>Misalignment causes bounce. Bounce wastes click cost.</p>
+                    
+                    <h3>Search Intent-Specific Pages</h3>
+                    
+                    <p><strong>Transactional intent:</strong> Demo page with headline "See [Product] in Action," short form, calendar scheduling.</p>
+                    
+                    <p><strong>Commercial investigation:</strong> Comparison page with headline "[Product] vs. [Competitor]: Honest Comparison."</p>
+                    
+                    <p><strong>Informational intent:</strong> Content page with educational content and gated deeper content.</p>
+                    
+                    <hr>
+                    
+                    <h2>Case Study: Google Search Optimization</h2>
+                    
+                    <p>A Remotir client (Series B SaaS, $15M ARR, selling sales enablement software) was running Google Ads with poor efficiency.</p>
+                    
+                    <p><strong>The Diagnosis:</strong></p>
+                    <ul>
+                        <li>65% of spend on Broad Match keywords</li>
+                        <li>No negative keyword strategy</li>
+                        <li>Search Query Report showed 40% irrelevant queries</li>
+                        <li>Single landing page for all campaigns</li>
+                        <li>Maximize Clicks bidding (optimizing for wrong goal)</li>
+                    </ul>
+                    
+                    <p><strong>The Intervention:</strong></p>
+                    <ol>
+                        <li>Switched keywords to Phrase and Exact Match</li>
+                        <li>Added 200+ negative keywords from query analysis</li>
+                        <li>Created intent-specific landing pages</li>
+                        <li>Restructured campaigns by intent level</li>
+                        <li>Moved to Manual CPC, then Enhanced CPC</li>
+                    </ol>
+                    
+                    <p><strong>Results (3 months later):</strong></p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Before</th>
+                                <th>After</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monthly spend</td>
+                                <td>$22,000</td>
+                                <td>$18,000</td>
+                            </tr>
+                            <tr>
+                                <td>Clicks</td>
+                                <td>1,850</td>
+                                <td>1,200</td>
+                            </tr>
+                            <tr>
+                                <td>CPC</td>
+                                <td>$11.89</td>
+                                <td>$15.00</td>
+                            </tr>
+                            <tr>
+                                <td>Leads</td>
+                                <td>45</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <td>CPL</td>
+                                <td>$489</td>
+                                <td>$250</td>
+                            </tr>
+                            <tr>
+                                <td>Lead-to-Opp</td>
+                                <td>18%</td>
+                                <td>28%</td>
+                            </tr>
+                            <tr>
+                                <td>Cost per Opp</td>
+                                <td>$2,717</td>
+                                <td>$893</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>Fewer clicks, higher intent, 3x better cost per opportunity.</p>
+                    
+                    <p><strong>The insight:</strong> Google efficiency is about reaching the right searches, not the most searches. Quality over quantity in keyword and match type strategy.</p>
+                    
+                    <hr>
+                    
+                    <h2>Conclusion: Capture What Exists</h2>
+                    
+                    <p>Google is not a demand creation channel. It is a demand capture channel.</p>
+                    
+                    <p>This limitation is also its strength. Searchers have self-qualified by their queries. A search for "B2B demand generation platform pricing" indicates someone far further in the buying journey than a LinkedIn impression.</p>
+                    
+                    <p><strong>Success requires:</strong></p>
+                    
+                    <ol>
+                        <li><strong>Intent focus:</strong> Prioritize transactional and commercial investigation keywords</li>
+                        <li><strong>Match type discipline:</strong> Avoid Broad Match traps</li>
+                        <li><strong>Negative keyword rigor:</strong> Eliminate irrelevant queries continuously</li>
+                        <li><strong>Landing page alignment:</strong> Match pages to search intent</li>
+                        <li><strong>Economic clarity:</strong> Only bid on keywords where math works</li>
+                    </ol>
+                    
+                    <p>Google captures demand efficiently when these conditions are met. When they are not, Google becomes an expensive exercise in paying for irrelevant clicks.</p>
+                    
+                    <p><strong>Know your keywords. Match intent. Capture demand.</strong></p>
+                    
+                    <!-- Key Frameworks -->
+                    <div class="chapter-frameworks">
+                        <h3 class="chapter-frameworks__title">Key Frameworks</h3>
+                        <div class="chapter-frameworks__list">
+                            <div class="chapter-frameworks__item">
+                                <div class="chapter-frameworks__item-title">Intent Hierarchy</div>
+                                <div class="chapter-frameworks__item-desc">Classification of search queries by proximity to purchase: Transactional, Commercial Investigation, Informational, Navigational.</div>
+                            </div>
+                            <div class="chapter-frameworks__item">
+                                <div class="chapter-frameworks__item-title">Keyword Economics</div>
+                                <div class="chapter-frameworks__item-desc">The viability calculation for keywords: CPC, CTR, landing page conversion, and lead-to-customer rate combined to calculate implied CAC.</div>
+                            </div>
+                            <div class="chapter-frameworks__item">
+                                <div class="chapter-frameworks__item-title">Match Type Strategy</div>
+                                <div class="chapter-frameworks__item-desc">The discipline of using Exact and Phrase Match over Broad Match to maintain control and reduce irrelevant spend.</div>
+                            </div>
+                            <div class="chapter-frameworks__item">
+                                <div class="chapter-frameworks__item-title">Landing Page Alignment</div>
+                                <div class="chapter-frameworks__item-desc">The principle that landing pages must continue the promise of the ad with message match, intent alignment, and conversion architecture.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- References -->
+                    <div class="chapter-references">
+                        <h3 class="chapter-references__title">References</h3>
+                        <ol class="chapter-references__list">
+                            <li><strong>Google (2024)</strong>. <em>Search Ads Best Practices for B2B.</em> <a href="https://support.google.com/google-ads" target="_blank" rel="noopener">Link</a></li>
+                            <li><strong>WordStream (2024)</strong>. <em>B2B Google Ads Benchmarks.</em> <a href="https://wordstream.com" target="_blank" rel="noopener">Link</a></li>
+                            <li><strong>SEMrush (2024)</strong>. <em>Keyword Research Guide.</em> <a href="https://semrush.com" target="_blank" rel="noopener">Link</a></li>
+                        </ol>
+                    </div>
+                    
+                </div>
+                
+                <!-- Chapter Navigation -->
+                <nav class="chapter-nav" aria-label="Chapter navigation">
+                    <a href="/insights/architecting-demand/meta-playbook/" class="chapter-nav__link chapter-nav__link--prev">
+                        <span class="chapter-nav__label">← Previous</span>
+                        <span class="chapter-nav__title">The Meta Playbook</span>
+                    </a>
+                    <a href="/insights/architecting-demand/content-engine/" class="chapter-nav__link chapter-nav__link--next">
+                        <span class="chapter-nav__label">Next →</span>
+                        <span class="chapter-nav__title">The Content Engine</span>
+                    </a>
+                </nav>
+                
+            </div>
+        </article>
+    </main>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <!-- Brand Column -->
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="Remotir Home">
+                        <img src="/assets/remotir-logo.png" alt="Remotir" height="33">
+                    </a>
+                    <p class="footer__description">Remotir is a GTM Infrastructure Firm. We design, install, and operate revenue systems that replace unvalidated burn with market-proven signal.</p>
+                </div>
+                
+                <!-- Link Columns -->
+                <div class="footer__columns">
+                    <!-- Solutions -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Solutions</h4>
+                        <div class="footer__column-links">
+                            <a href="/pmf-sprint/" class="footer__link">PMF Sprint</a>
+                            <a href="/predictable-revenue/" class="footer__link">Predictable Revenue</a>
+                            <a href="/pmf-failure/" class="footer__link">PMF Failure</a>
+                            <a href="/unpredictable-pipeline/" class="footer__link">Unpredictable Pipeline</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Studies -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Case Studies</h4>
+                        <div class="footer__column-links">
+                            <a href="/results/" class="footer__link">View All Results</a>
+                            <a href="/case-study-right-to-play/" class="footer__link">£20M Series A Validation</a>
+                            <a href="/case-study-efficiency-gain/" class="footer__link">66% Efficiency Gain</a>
+                            <a href="/case-study-d2c-transformation/" class="footer__link">600% D2C Volume Uplift</a>
+                            <a href="/case-study-pmf-pivot/" class="footer__link">137x ACV Increase</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Company -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Company</h4>
+                        <div class="footer__column-links">
+                            <a href="/insights/" class="footer__link">Insights</a>
+                            <a href="/schedule/" class="footer__link">Schedule a Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
+</body>
+</html>

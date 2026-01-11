@@ -42,18 +42,46 @@
     <link rel="stylesheet" href="/styles/theme.css">
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/pages/insights.css">
 </head>
 <body>
     {{> nav activeNav="insights" }}
 
     <main>
         <div style="height: var(--nav-height);"></div>
-        <section class="section">
+        
+        <!-- Hero Section -->
+        <section class="insights-hero">
             <div class="container">
-                <h1 style="font-size: var(--text-6xl); margin-bottom: var(--space-6);">Insights</h1>
-                <p style="font-size: var(--text-xl); color: var(--color-text-secondary);">Page content coming soon.</p>
+                <div class="insights-hero__content">
+                    <h1 class="insights-hero__title">Insights</h1>
+                    <p class="insights-hero__subtitle">GTM knowledge, frameworks, and playbooks from practitioners who build revenue systems every day.</p>
+                </div>
             </div>
         </section>
+        
+        <!-- Playbooks Section -->
+        <section class="playbooks-section">
+            <div class="container">
+                <div class="playbooks-grid">
+                    <a href="/insights/architecting-demand/" class="playbook-card">
+                        <div class="playbook-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18"/>
+                                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                            </svg>
+                        </div>
+                        <div class="playbook-card__content">
+                            <span class="playbook-card__label">Playbook</span>
+                            <h2 class="playbook-card__title">Architecting Demand</h2>
+                            <p class="playbook-card__description">The complete system for profitable customer acquisition. From diagnosis to execution—the 4 Lens Framework and operational playbooks that turn marketing spend into revenue.</p>
+                            <span class="playbook-card__meta">18 chapters · ~3 hours</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     {{> footer }}

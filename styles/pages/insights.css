@@ -136,6 +136,204 @@
 }
 
 /* =============================================================================
+   PLAYBOOK LANDING PAGE
+   ============================================================================= */
+.playbook-hero {
+    padding: var(--space-12) 0 var(--space-16);
+}
+
+.playbook-hero__content {
+    max-width: 800px;
+}
+
+.playbook-hero__label {
+    display: inline-block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-blue-light);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    margin-bottom: var(--space-4);
+}
+
+.playbook-hero__title {
+    font-size: var(--heading-hero);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    margin-bottom: var(--space-2);
+}
+
+.playbook-hero__subtitle {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-medium);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+}
+
+.playbook-hero__description {
+    font-size: var(--text-lg);
+    font-weight: var(--font-regular);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-normal);
+    margin-bottom: var(--space-8);
+}
+
+.playbook-hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+}
+
+.playbook-hero__meta-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-md);
+    color: var(--color-text-muted);
+}
+
+.playbook-hero__meta-item svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Playbook Table of Contents */
+.playbook-toc {
+    padding-bottom: var(--space-16);
+}
+
+.playbook-part {
+    margin-bottom: var(--space-12);
+}
+
+.playbook-part__header {
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.playbook-part__number {
+    display: inline-block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-blue-light);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    margin-bottom: var(--space-2);
+}
+
+.playbook-part__title {
+    font-size: var(--heading-card);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    line-height: var(--leading-snug);
+    margin-bottom: var(--space-2);
+}
+
+.playbook-part__description {
+    font-size: var(--text-md);
+    font-weight: var(--font-regular);
+    color: var(--color-text-secondary);
+}
+
+.playbook-part__chapters {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.playbook-chapter {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: background var(--transition-fast), 
+                border-color var(--transition-fast),
+                transform var(--transition-fast);
+}
+
+.playbook-chapter:hover {
+    background: var(--color-bg-card-highlight);
+    border-color: var(--color-border-card);
+    transform: translateX(4px);
+}
+
+.playbook-chapter__number {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text-muted);
+}
+
+.playbook-chapter__title {
+    font-size: var(--text-md);
+    font-weight: var(--font-medium);
+    color: var(--color-text-primary);
+}
+
+.playbook-chapter__time {
+    font-size: var(--text-sm);
+    font-weight: var(--font-regular);
+    color: var(--color-text-muted);
+}
+
+/* Playbook CTA */
+.playbook-cta {
+    padding: var(--space-16) 0;
+    background: var(--gradient-cta);
+    text-align: center;
+}
+
+.playbook-cta__content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.playbook-cta__content h2 {
+    font-size: var(--heading-section);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    line-height: var(--leading-tight);
+    margin-bottom: var(--space-4);
+}
+
+.playbook-cta__content p {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .playbook-hero__title {
+        font-size: var(--heading-section);
+    }
+    
+    .playbook-hero__subtitle {
+        font-size: var(--text-xl);
+    }
+    
+    .playbook-chapter {
+        grid-template-columns: 1fr auto;
+    }
+    
+    .playbook-chapter__number {
+        display: none;
+    }
+    
+    .playbook-cta__content h2 {
+        font-size: var(--heading-card);
+    }
+}
+
+/* =============================================================================
    CHAPTER DETAIL PAGE
    ============================================================================= */
 .chapter-page {
