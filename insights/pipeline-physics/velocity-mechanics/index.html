@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Mechanics - Pipeline Physics | Remotir</title>
+    <meta name="description" content="Time kills deals. The longer an opportunity sits, the less likely it closes. Velocity is not just a speed metric—it is a probability signal.">
+    <meta name="keywords" content="sales velocity, deal velocity, time in stage, pipeline velocity, days in stage threshold">
+    <link rel="canonical" href="https://remotir.com/insights/pipeline-physics/velocity-mechanics/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Velocity Mechanics - Pipeline Physics">
+    <meta property="og:description" content="Time kills deals. Velocity is not just a speed metric—it is a probability signal.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://remotir.com/insights/pipeline-physics/velocity-mechanics/">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/theme.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/pages/insights.css">
+</head>
+<body>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+            <!-- Logo -->
+            <a href="/" class="nav__logo" aria-label="Remotir Home">
+                <img src="/assets/remotir-logo.png" alt="Remotir" height="33">
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="nav__links">
+                <a href="/" class="nav__link">Home</a>
+                <div class="nav__dropdown">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                        Your Problems
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__dropdown-menu">
+                        <a href="/pmf-failure/" class="nav__dropdown-item">PMF Failure</a>
+                        <a href="/unpredictable-pipeline/" class="nav__dropdown-item">Unpredictable Pipeline</a>
+                    </div>
+                </div>
+                <div class="nav__dropdown">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                        Our Solutions
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__dropdown-menu">
+                        <a href="/pmf-sprint/" class="nav__dropdown-item">PMF Sprint</a>
+                        <a href="/predictable-revenue/" class="nav__dropdown-item">Predictable Revenue</a>
+                    </div>
+                </div>
+                <a href="/results/" class="nav__link">Impact</a>
+                
+                <!-- Insights Mega Dropdown -->
+                <div class="nav__mega-dropdown">
+                    <button class="nav__dropdown-trigger nav__dropdown-trigger--active" aria-expanded="false" aria-haspopup="true">
+                        Insights
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__mega-dropdown-panel">
+                        <div class="mega-dropdown__categories">
+                            <a href="/insights/0-100k-playbook/" class="mega-dropdown__category" data-playbook="0-100k">$0 to $100k Playbook<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/insights/architecting-demand/" class="mega-dropdown__category is-active" data-playbook="demand">Architecting Demand<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/insights/pipeline-physics/" class="mega-dropdown__category" data-playbook="pipeline">Pipeline Physics<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <div class="mega-dropdown__divider"></div>
+                            <span class="mega-dropdown__category mega-dropdown__category--disabled">Calculators<span class="mega-dropdown__badge">Soon</span></span>
+                        </div>
+                        <div class="mega-dropdown__chapters" data-playbook="0-100k"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/0-100k-playbook/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/0-100k-playbook/validation-fallacy/" class="mega-dropdown__chapter-link">The Validation Fallacy</a><a href="/insights/0-100k-playbook/zero-dollar-customer/" class="mega-dropdown__chapter-link">Zero Dollar Customer</a><a href="/insights/0-100k-playbook/pricing-the-painkiller/" class="mega-dropdown__chapter-link">Pricing the Painkiller</a><a href="/insights/0-100k-playbook/forensic-persona-audit/" class="mega-dropdown__chapter-link">Forensic Persona Audit</a><a href="/insights/0-100k-playbook/painkiller-narrative/" class="mega-dropdown__chapter-link">Painkiller Narrative</a><a href="/insights/0-100k-playbook/10k-mrr-trap/" class="mega-dropdown__chapter-link">The $10k MRR Trap</a><a href="/insights/0-100k-playbook/founder-led-sales/" class="mega-dropdown__chapter-link">Founder-Led Sales</a><a href="/insights/0-100k-playbook/channel-physics/" class="mega-dropdown__chapter-link">Channel Physics</a><a href="/insights/0-100k-playbook/unit-economics/" class="mega-dropdown__chapter-link">Unit Economics</a><a href="/insights/0-100k-playbook/100k-inflection/" class="mega-dropdown__chapter-link">The $100k Inflection</a><a href="/insights/0-100k-playbook/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/0-100k-playbook/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                        <div class="mega-dropdown__chapters is-visible" data-playbook="demand"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/architecting-demand/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/architecting-demand/leads-delusion/" class="mega-dropdown__chapter-link">The Leads Delusion</a><a href="/insights/architecting-demand/platform-problem/" class="mega-dropdown__chapter-link">The Platform Problem</a><a href="/insights/architecting-demand/agency-problem/" class="mega-dropdown__chapter-link">The Agency Problem</a><a href="/insights/architecting-demand/sales-marketing-divide/" class="mega-dropdown__chapter-link">The Sales-Marketing Divide</a><a href="/insights/architecting-demand/4-lens-framework/" class="mega-dropdown__chapter-link">The 4 Lens Framework</a><a href="/insights/architecting-demand/icp-architecture/" class="mega-dropdown__chapter-link">ICP Architecture</a><a href="/insights/architecting-demand/message-engineering/" class="mega-dropdown__chapter-link">Message Engineering</a><a href="/insights/architecting-demand/channel-selection/" class="mega-dropdown__chapter-link">Channel Selection</a><a href="/insights/architecting-demand/execution-discipline/" class="mega-dropdown__chapter-link">Execution Discipline</a><a href="/insights/architecting-demand/linkedin-playbook/" class="mega-dropdown__chapter-link">LinkedIn Playbook</a><a href="/insights/architecting-demand/meta-playbook/" class="mega-dropdown__chapter-link">Meta Playbook</a><a href="/insights/architecting-demand/google-playbook/" class="mega-dropdown__chapter-link">Google Playbook</a><a href="/insights/architecting-demand/content-engine/" class="mega-dropdown__chapter-link">Content Engine</a><a href="/insights/architecting-demand/demand-audit/" class="mega-dropdown__chapter-link">Demand Audit</a><a href="/insights/architecting-demand/attribution-reality/" class="mega-dropdown__chapter-link">Attribution Reality</a><a href="/insights/architecting-demand/scaling-demand/" class="mega-dropdown__chapter-link">Scaling Demand</a><a href="/insights/architecting-demand/demand-os/" class="mega-dropdown__chapter-link">Demand Operating System</a><a href="/insights/architecting-demand/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/architecting-demand/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                        <div class="mega-dropdown__chapters" data-playbook="pipeline"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/pipeline-physics/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/pipeline-physics/forecast-delusion/" class="mega-dropdown__chapter-link">The Forecast Delusion</a><a href="/insights/pipeline-physics/pipeline-math/" class="mega-dropdown__chapter-link">Pipeline Math</a><a href="/insights/pipeline-physics/velocity-equation/" class="mega-dropdown__chapter-link">The Velocity Equation</a><a href="/insights/pipeline-physics/stage-economics/" class="mega-dropdown__chapter-link">Stage Economics</a><a href="/insights/pipeline-physics/conversion-physics/" class="mega-dropdown__chapter-link">Conversion Physics</a><a href="/insights/pipeline-physics/time-kills-deals/" class="mega-dropdown__chapter-link">Time Kills Deals</a><a href="/insights/pipeline-physics/pipeline-debt/" class="mega-dropdown__chapter-link">Pipeline Debt</a><a href="/insights/pipeline-physics/forecasting-reality/" class="mega-dropdown__chapter-link">Forecasting Reality</a><a href="/insights/pipeline-physics/pipeline-operations/" class="mega-dropdown__chapter-link">Pipeline Operations</a><a href="/insights/pipeline-physics/scaling-pipeline/" class="mega-dropdown__chapter-link">Scaling Pipeline</a><a href="/insights/pipeline-physics/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/pipeline-physics/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="nav__actions">
+                <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="nav__mobile" id="mobile-nav">
+            <a href="/" class="nav__link">Home</a>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Your Problems</span>
+                <a href="/pmf-failure/" class="nav__link">PMF Failure</a>
+                <a href="/unpredictable-pipeline/" class="nav__link">Unpredictable Pipeline</a>
+            </div>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Our Solutions</span>
+                <a href="/pmf-sprint/" class="nav__link">PMF Sprint</a>
+                <a href="/predictable-revenue/" class="nav__link">Predictable Revenue</a>
+            </div>
+            
+            <a href="/results/" class="nav__link">Impact</a>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Insights</span>
+                <a href="/insights/0-100k-playbook/" class="nav__link">$0 to $100k Playbook</a>
+                <a href="/insights/architecting-demand/" class="nav__link">Architecting Demand</a>
+                <a href="/insights/pipeline-physics/" class="nav__link">Pipeline Physics</a>
+            </div>
+            
+            <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
+        </div>
+    </nav>
+
+    
+    <main class="chapter-page">
+        <div style="height: var(--nav-height);"></div>
+        
+        <!-- Breadcrumb -->
+        <nav class="chapter-breadcrumb" aria-label="Breadcrumb">
+            <div class="container">
+                <a href="/insights/">Insights</a>
+                <span class="chapter-breadcrumb__separator">/</span>
+                <a href="/insights/pipeline-physics/">Pipeline Physics</a>
+                <span class="chapter-breadcrumb__separator">/</span>
+                <span class="chapter-breadcrumb__current">Velocity Mechanics</span>
+            </div>
+        </nav>
+        
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+            <div class="container">
+                <span class="chapter-header__label">Domain 2: Pipeline Mechanics · Chapter 5</span>
+                <h1 class="chapter-header__title">Velocity Mechanics</h1>
+                <div class="chapter-header__meta">
+                    <span class="chapter-header__read-time">8 min read</span>
+                </div>
+                <p class="chapter-header__summary">Time kills deals. The longer an opportunity sits, the less likely it closes. Velocity is not just a speed metric. It is a probability signal. Deals that exceed their Days-in-Stage Threshold are dying, regardless of what the rep believes.</p>
+            </div>
+        </header>
+        
+        <!-- Chapter Content -->
+        <div class="chapter-content">
+            <div class="container container--narrow">
+                
+                <h2>The Time Variable</h2>
+                
+                <p>Every deal has a clock.</p>
+                
+                <p>From the moment an opportunity enters pipeline, time is working against it. Buyer priorities shift. Champions change roles. Budgets get reallocated. Competitors engage. Internal projects take precedence.</p>
+                
+                <p>The deal that felt urgent three months ago feels stale today. The champion who was excited has moved on to other priorities. The budget that was available has been spent elsewhere.</p>
+                
+                <p><strong>Time is not neutral.</strong> It is a force that decays probability.</p>
+                
+                <p>Most pipeline analysis ignores this force. Deals are weighted by stage, not by age. A deal in Stage 4 that has been there for 90 days is counted the same as a deal in Stage 4 that entered yesterday. The forecast treats them identically.</p>
+                
+                <p>They are not identical. The 90-day deal is dying. The new deal has momentum. Treating them the same corrupts the forecast.</p>
+                
+                <h2>The Velocity Decay Rate</h2>
+                
+                <p>When deals exceed their expected time in a stage, their probability of closing does not remain constant. It drops.</p>
+                
+                <p><strong>Remotir analysis across client pipelines reveals a consistent pattern:</strong> For every week a deal exceeds the average time in its stage, close probability decreases by 5-8%.</p>
+                
+                <p>This is the <strong>Velocity Decay Rate</strong>. It quantifies how time erodes probability.</p>
+                
+                <h3>The Math</h3>
+                
+                <p>Consider a deal in Stage 4, which historically converts to Close at 70%.</p>
+                
+                <ul>
+                    <li>Average time in Stage 4: 15 days</li>
+                    <li>Deal A has been in Stage 4 for 14 days: Probability remains ~70%</li>
+                    <li>Deal B has been in Stage 4 for 30 days (15 days over): Probability drops to ~55-60%</li>
+                    <li>Deal C has been in Stage 4 for 45 days (30 days over): Probability drops to ~40-45%</li>
+                </ul>
+                
+                <p>Deal C is still in Stage 4. The CRM says it is 70% likely. The physics say it is 40%.</p>
+                
+                <p><strong>The decay is not linear forever.</strong> After a certain threshold, the deal is effectively dead. It may still sit in pipeline, but it will not close in its current form. Something fundamental must change (new champion, new event, new urgency) for the deal to revive.</p>
+                
+                <h3>Why Decay Happens</h3>
+                
+                <p>Deals stall for reasons:</p>
+                
+                <p><strong>Loss of urgency:</strong> The pain that drove initial interest has become tolerable. Other priorities have emerged. The problem is still real but no longer top of list.</p>
+                
+                <p><strong>Internal friction:</strong> Stakeholders disagree. Procurement is slow. Legal has concerns. Each day of internal friction reduces momentum.</p>
+                
+                <p><strong>Competitive activity:</strong> A competitor has engaged. The buyer is evaluating alternatives. Your deal is on hold while they compare.</p>
+                
+                <p><strong>Champion distraction:</strong> Your internal advocate is busy with other projects. They are not actively pushing. Without their energy, the deal drifts.</p>
+                
+                <p><strong>Decision avoidance:</strong> The buyer fears making the wrong choice. They defer. They request more information. They schedule another meeting. Each delay is a micro-decision to not decide.</p>
+                
+                <p>None of these reasons improve with time. They compound. A deal that stalled due to stakeholder disagreement does not become easier as weeks pass. The disagreement calcifies.</p>
+                
+                <h2>Days-in-Stage Threshold</h2>
+                
+                <p>The <strong>Days-in-Stage Threshold</strong> is the time limit after which a deal's probability drops precipitously. It is calculated for each stage based on historical data.</p>
+                
+                <h3>Calculating Your Thresholds</h3>
+                
+                <p><strong>Step 1: Measure historical stage duration</strong></p>
+                
+                <p>For each stage, analyze deals that successfully advanced to the next stage. What was the average time they spent in this stage? What was the median? What was the 75th percentile?</p>
+                
+                <p><strong>Step 2: Set the threshold</strong></p>
+                
+                <p>The threshold should be set at the point where probability materially declines. For most stages, this is 1.5x to 2x the average duration.</p>
+                
+                <p>If Stage 3 has an average duration of 10 days and a median of 8 days, the threshold might be 18-20 days.</p>
+                
+                <p><strong>Step 3: Analyze exceptions</strong></p>
+                
+                <p>Some deals legitimately take longer due to deal size, buyer complexity, or known events (holiday, budget cycle). Segment your data to see if thresholds should vary by segment.</p>
+                
+                <p>Enterprise deals may have different thresholds than SMB deals. Adjust accordingly.</p>
+                
+                <h3>Example Thresholds</h3>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Stage</th>
+                            <th>Average Duration</th>
+                            <th>Threshold</th>
+                            <th>Decay Rate Beyond</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stage 1 (Qualified)</td>
+                            <td>7 days</td>
+                            <td>14 days</td>
+                            <td>6%/week</td>
+                        </tr>
+                        <tr>
+                            <td>Stage 2 (Discovery)</td>
+                            <td>12 days</td>
+                            <td>24 days</td>
+                            <td>5%/week</td>
+                        </tr>
+                        <tr>
+                            <td>Stage 3 (Solution)</td>
+                            <td>15 days</td>
+                            <td>28 days</td>
+                            <td>7%/week</td>
+                        </tr>
+                        <tr>
+                            <td>Stage 4 (Business Case)</td>
+                            <td>18 days</td>
+                            <td>32 days</td>
+                            <td>8%/week</td>
+                        </tr>
+                        <tr>
+                            <td>Stage 5 (Negotiation)</td>
+                            <td>14 days</td>
+                            <td>25 days</td>
+                            <td>10%/week</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>Late-stage deals often have steeper decay rates because they were supposed to close. A deal in Stage 5 for 60 days represents a fundamental problem, not just a slow buyer.</p>
+                
+                <h2>Velocity as a Health Metric</h2>
+                
+                <p>Aggregate velocity metrics reveal pipeline health beyond what stage analysis shows.</p>
+                
+                <h3>Key Velocity Metrics</h3>
+                
+                <p><strong>Average Sales Cycle:</strong> Time from opportunity creation to close (won or lost). Trend this metric over time. Increasing sales cycles often indicate market headwinds or qualification drift.</p>
+                
+                <p><strong>Stage Velocity:</strong> Average time spent in each stage for deals that advance. Reveals which stages are friction points.</p>
+                
+                <p><strong>Threshold Violation Rate:</strong> Percentage of current pipeline that exceeds Days-in-Stage Threshold. A leading indicator of forecast trouble.</p>
+                
+                <p><strong>Aging Distribution:</strong> What percentage of pipeline is &lt;30 days old? 30-60? 60-90? &gt;90? Healthy pipelines skew young. Aging pipelines signal stagnation.</p>
+                
+                <h3>The 90-Day Rule</h3>
+                
+                <p>Across most B2B segments, deals older than 90 days have dramatically lower close rates. The specific number varies by sales cycle length, but the principle holds.</p>
+                
+                <p><strong>A deal that has been in pipeline for 3 months without closing is unlikely to close in its current form.</strong></p>
+                
+                <p>This does not mean you abandon the account. It means you recognize that the current opportunity is dead. You need a new entry point: a new champion, a new event, a new angle. The old opportunity should be closed-lost or archived.</p>
+                
+                <p>Keeping zombie deals in pipeline pollutes metrics, consumes mindshare, and creates forecast illusions.</p>
+                
+                <h2>Velocity-Adjusted Forecasting</h2>
+                
+                <p>Traditional forecasts weight deals by stage probability. Velocity-adjusted forecasts weight deals by stage probability modified by time.</p>
+                
+                <h3>The Adjustment Formula</h3>
+                
+                <p><strong>Adjusted Probability = Base Probability × Velocity Factor</strong></p>
+                
+                <p>Where:</p>
+                <ul>
+                    <li>Base Probability = Historical conversion rate for this stage</li>
+                    <li>Velocity Factor = Decay multiplier based on days over threshold</li>
+                </ul>
+                
+                <p><strong>Velocity Factor calculation:</strong></p>
+                <ul>
+                    <li>If days in stage ≤ threshold: Factor = 1.0 (no adjustment)</li>
+                    <li>If days in stage &gt; threshold: Factor = 1 - (Weeks Over × Decay Rate)</li>
+                </ul>
+                
+                <p><strong>Example:</strong></p>
+                
+                <p>Deal in Stage 4</p>
+                <ul>
+                    <li>Base probability: 70%</li>
+                    <li>Days in Stage 4: 45 days</li>
+                    <li>Threshold: 32 days</li>
+                    <li>Days over: 13 days (about 2 weeks)</li>
+                    <li>Decay rate: 8% per week</li>
+                    <li>Velocity Factor: 1 - (2 × 0.08) = 0.84</li>
+                    <li>Adjusted probability: 70% × 0.84 = 59%</li>
+                </ul>
+                
+                <p><strong>The deal that CRM calls 70% is actually 59%.</strong> The forecast should reflect reality, not stage labels.</p>
+                
+                <h3>Portfolio-Level Impact</h3>
+                
+                <p>When you apply velocity adjustments across the entire pipeline, the impact is often significant.</p>
+                
+                <p>A pipeline that shows $10M at blended stage probability might show $7.5M when velocity-adjusted. The $2.5M difference represents deals that are nominally in-stage but practically dying.</p>
+                
+                <p><strong>This adjustment is not pessimism. It is physics.</strong> The forecast should reflect what will happen, not what the stages say.</p>
+                
+                <h2>Managing Velocity Proactively</h2>
+                
+                <p>Velocity problems are easier to prevent than to fix. Once a deal stalls, revival is difficult.</p>
+                
+                <h3>Prevention Tactics</h3>
+                
+                <p><strong>Next Step Discipline:</strong> Every deal must have a specific, scheduled next step with the buyer. Not "follow up next week." A calendar invite for a specific meeting with a specific purpose.</p>
+                
+                <p>Deals without next steps drift. Drift becomes stall. Stall becomes death.</p>
+                
+                <p><strong>Milestone Mapping:</strong> At deal creation, map the expected milestones and timelines. When will discovery complete? When will stakeholders be engaged? When will the decision meeting occur?</p>
+                
+                <p>Track against the map. Deviation from expected timeline is an early warning signal.</p>
+                
+                <p><strong>Proactive Intervention:</strong> When a deal approaches threshold, intervene before it crosses. Do not wait to see if it will unstick. Assume it will not. Escalate, change approach, involve leadership, or qualify out.</p>
+                
+                <h3>Intervention Tactics</h3>
+                
+                <p>When a deal exceeds threshold:</p>
+                
+                <p><strong>Pattern interrupt:</strong> Something must change. The same rep doing the same thing will produce the same stall. Bring in a different voice: sales leadership, solutions engineer, customer reference.</p>
+                
+                <p><strong>Requalification:</strong> Verify that the original qualification still holds. Has pain become less urgent? Has budget shifted? Has the champion's priority changed? The deal may have decayed because the underlying qualification decayed.</p>
+                
+                <p><strong>Explicit timeline:</strong> Force a conversation about decision timeline. "Based on our conversations, I expected we would be further along. Has something changed on your end?" The answer reveals whether the deal is alive.</p>
+                
+                <p><strong>Graceful exit:</strong> Some deals cannot be saved. Closing them out is better than indefinite pursuit. The rep can re-engage the account later with a new opportunity. Holding the zombie deal serves no one.</p>
+                
+                <h2>Case Study: The Velocity Wake-Up</h2>
+                
+                <p>A Remotir client (enterprise SaaS, $8M ARR, 12-person sales team) had a pipeline that looked healthy on paper: $18M, 3.2x coverage on a $5.6M target.</p>
+                
+                <p><strong>The Diagnosis:</strong></p>
+                
+                <p>We analyzed pipeline age distribution:</p>
+                
+                <ul>
+                    <li>&lt;30 days: 22% of pipeline value</li>
+                    <li>30-60 days: 28%</li>
+                    <li>60-90 days: 24%</li>
+                    <li>&gt;90 days: 26%</li>
+                </ul>
+                
+                <p><strong>More than half the pipeline was over 60 days old.</strong> The average sales cycle for this company was 45 days.</p>
+                
+                <p>We applied velocity-adjusted probability:</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Segment</th>
+                            <th>Pipeline Value</th>
+                            <th>Stage Probability</th>
+                            <th>Velocity-Adjusted</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;30 days</td>
+                            <td>$4.0M</td>
+                            <td>$1.6M</td>
+                            <td>$1.5M</td>
+                        </tr>
+                        <tr>
+                            <td>30-60 days</td>
+                            <td>$5.0M</td>
+                            <td>$2.3M</td>
+                            <td>$1.9M</td>
+                        </tr>
+                        <tr>
+                            <td>60-90 days</td>
+                            <td>$4.3M</td>
+                            <td>$2.0M</td>
+                            <td>$1.2M</td>
+                        </tr>
+                        <tr>
+                            <td>&gt;90 days</td>
+                            <td>$4.7M</td>
+                            <td>$1.9M</td>
+                            <td>$0.6M</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>$18M</strong></td>
+                            <td><strong>$7.8M</strong></td>
+                            <td><strong>$5.2M</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>The CRM showed $7.8M in weighted pipeline. Velocity-adjusted reality was $5.2M. The forecast was overcounting by $2.6M because it ignored time.</p>
+                
+                <p><strong>The Intervention:</strong></p>
+                
+                <ol>
+                    <li>Implemented Days-in-Stage Thresholds with CRM alerts</li>
+                    <li>Added velocity factor to forecast model</li>
+                    <li>Required action plan for any deal exceeding threshold</li>
+                    <li>Instituted "90-day purge" to archive zombie opportunities</li>
+                </ol>
+                
+                <p><strong>The Results (next quarter):</strong></p>
+                
+                <ul>
+                    <li>Pipeline reduced from $18M to $11M (zombie deals archived)</li>
+                    <li>Forecast accuracy improved from 62% to 88%</li>
+                    <li>Average sales cycle decreased 12% (stuck deals addressed earlier)</li>
+                    <li>Rep productivity increased (less time on dead deals)</li>
+                </ul>
+                
+                <p><strong>The insight:</strong> The company did not have $18M in pipeline. They had $11M in pipeline and $7M in wishful thinking. Velocity analysis revealed what stages hid.</p>
+                
+                <h2>Conclusion: Time Is Truth</h2>
+                
+                <p>Stage tells you where a deal says it is. Time tells you where a deal actually is.</p>
+                
+                <p>A deal in Stage 4 for 60 days is not a Stage 4 deal. It is a deal that should have closed a month ago and did not. Something is wrong. Pretending otherwise corrupts your forecast and wastes your resources.</p>
+                
+                <p><strong>Velocity is not just a speed metric.</strong> It is a probability signal. Fast deals are healthy deals. Slow deals are sick deals. Very slow deals are dead deals.</p>
+                
+                <p>The physics are consistent. Time decays probability. Every day over threshold reduces the likelihood of close. The decay is measurable, predictable, and unforgiving.</p>
+                
+                <p>Build velocity into your model. Set thresholds. Monitor violations. Intervene before death, not after.</p>
+                
+                <p><strong>The deals that are going to close are moving. The deals that are stuck are not stuck. They are dying.</strong></p>
+                
+            </div>
+        </div>
+        
+        <!-- Key Frameworks -->
+        <div class="chapter-frameworks">
+            <div class="container container--narrow">
+                <h3>Key Frameworks</h3>
+                <ul>
+                    <li><strong>Velocity Decay Rate:</strong> The rate at which probability decreases for each week a deal exceeds its threshold. Typically 5-10% per week.</li>
+                    <li><strong>Days-in-Stage Threshold:</strong> The time limit, specific to each stage, beyond which deal probability begins declining. Typically 1.5x to 2x average stage duration.</li>
+                    <li><strong>Velocity-Adjusted Forecasting:</strong> Forecasting methodology that modifies stage probability based on deal age.</li>
+                    <li><strong>The 90-Day Rule:</strong> Deals older than 90 days have dramatically lower close rates and should be requalified or archived.</li>
+                    <li><strong>Zombie Deals:</strong> Opportunities that remain in pipeline far beyond reasonable close timelines.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Chapter References -->
+        <div class="chapter-references">
+            <div class="container container--narrow">
+                <h3>References</h3>
+                <ol>
+                    <li><strong>InsightSquared (2024)</strong>. <em>Sales Velocity Analysis.</em></li>
+                    <li><strong>Gartner (2023)</strong>. <em>Deal Velocity Best Practices.</em></li>
+                    <li><strong>Clari (2024)</strong>. <em>Time-in-Stage Impact on Win Rates.</em></li>
+                </ol>
+            </div>
+        </div>
+        
+        <!-- Chapter Navigation -->
+        <nav class="chapter-nav">
+            <div class="container">
+                <a href="/insights/pipeline-physics/conversion-physics/" class="chapter-nav__link chapter-nav__link--prev">
+                    <span class="chapter-nav__label">Previous Chapter</span>
+                    <span class="chapter-nav__title">Conversion Physics</span>
+                </a>
+                <a href="/insights/pipeline-physics/coverage-myth/" class="chapter-nav__link chapter-nav__link--next">
+                    <span class="chapter-nav__label">Next Chapter</span>
+                    <span class="chapter-nav__title">The Coverage Myth</span>
+                </a>
+            </div>
+        </nav>
+        
+    </main>
+    
+        <footer class="footer">
+        <div class="container">
+            <!-- Top Divider -->
+            <div class="footer__divider"></div>
+            
+            <!-- Link Columns -->
+            <div class="footer__columns">
+                <!-- Solutions -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Solutions</h4>
+                    <div class="footer__column-links">
+                        <a href="/pmf-sprint/" class="footer__link">PMF Sprint</a>
+                        <a href="/predictable-revenue/" class="footer__link">Predictable Revenue</a>
+                        <a href="/pmf-failure/" class="footer__link">PMF Failure</a>
+                        <a href="/unpredictable-pipeline/" class="footer__link">Unpredictable Pipeline</a>
+                    </div>
+                </div>
+                
+                <!-- Case Studies -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Case Studies</h4>
+                    <div class="footer__column-links">
+                        <a href="/results/" class="footer__link">View All Results</a>
+                        <a href="/case-study-right-to-play/" class="footer__link">£20M Series A Validation</a>
+                        <a href="/case-study-efficiency-gain/" class="footer__link">66% Efficiency Gain</a>
+                        <a href="/case-study-d2c-transformation/" class="footer__link">600% D2C Volume Uplift</a>
+                        <a href="/case-study-pmf-pivot/" class="footer__link">137x ACV Increase</a>
+                    </div>
+                </div>
+                
+                <!-- Insights -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Insights</h4>
+                    <div class="footer__column-links">
+                        <a href="/insights/0-100k-playbook/" class="footer__link">$0 to $100k Playbook</a>
+                        <a href="/insights/architecting-demand/" class="footer__link">Architecting Demand</a>
+                        <a href="/insights/pipeline-physics/" class="footer__link">Pipeline Physics</a>
+                    </div>
+                </div>
+                
+                <!-- Company -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Company</h4>
+                    <div class="footer__column-links">
+                        <a href="/results/" class="footer__link">Impact</a>
+                        <a href="/schedule/" class="footer__link">Schedule a Call</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="footer__bottom">
+                <a href="/" class="footer__logo" aria-label="Remotir Home">
+                    <img src="/assets/remotir-logo.png" alt="Remotir" height="28">
+                </a>
+                
+                <div class="footer__legal">
+                    <a href="/terms/" class="footer__legal-link">Terms of Service</a>
+                    <a href="/privacy/" class="footer__legal-link">Privacy Policy</a>
+                </div>
+                
+                <div class="footer__right">
+                    <a href="https://linkedin.com/company/remotir" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <span class="footer__copyright">© 2026 Remotir. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
+</body>
+</html>
