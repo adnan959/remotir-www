@@ -390,7 +390,8 @@
     padding: var(--space-4) var(--space-5);
     display: none;
     flex-direction: column;
-    gap: 2px;
+    gap: var(--space-2);
+    min-height: 380px;
     max-height: 420px;
     overflow-y: auto;
 }
@@ -409,6 +410,12 @@
     margin-bottom: var(--space-1);
 }
 
+.mega-dropdown__chapters-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px var(--space-4);
+}
+
 .mega-dropdown__chapter-link {
     display: block;
     padding: var(--space-2) var(--space-3);
@@ -418,11 +425,20 @@
     text-decoration: none;
     border-radius: var(--radius-sm);
     transition: background-color var(--transition-fast), color var(--transition-fast);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .mega-dropdown__chapter-link:hover {
     background: var(--color-bg-light-subtle);
     color: var(--color-text-dark);
+}
+
+.mega-dropdown__chapter-number {
+    color: var(--color-text-dark-secondary);
+    margin-right: var(--space-1);
+    font-variant-numeric: tabular-nums;
 }
 
 .mega-dropdown__view-all {
