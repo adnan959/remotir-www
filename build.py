@@ -2,13 +2,16 @@
 """
 Simple build script that compiles HTML templates with partial includes.
 Replaces {{> partialName param="value" }} with the partial content.
+Also generates sitemap.xml automatically.
 """
 import os
 import re
+from datetime import datetime
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(ROOT_DIR, 'src')
 PARTIALS_DIR = os.path.join(SRC_DIR, 'partials')
+BASE_URL = "https://www.remotir.com"
 
 def load_partials():
     """Load all HTML partials from src/partials/"""
@@ -91,6 +94,96 @@ def get_html_files(directory, base_dir=None):
     
     return files
 
+def get_priority(filepath):
+    """Determine sitemap priority based on page type and depth"""
+    # Homepage
+    if filepath == "index.html":
+        return "1.0"
+    
+    # Top-level service/solution pages
+    top_level = ['pmf-sprint', 'predictable-revenue', 'pmf-failure', 
+                 'unpredictable-pipeline', 'schedule', 'results']
+    for page in top_level:
+        if filepath.startswith(page + '/'):
+            return "0.9"
+    
+    # Case studies
+    if 'case-study' in filepath:
+        return "0.8"
+    
+    # Insights hub
+    if filepath == "insights/index.html":
+        return "0.8"
+    
+    # Playbook index pages
+    playbooks = ['0-100k-playbook', 'architecting-demand', 'pipeline-physics']
+    for playbook in playbooks:
+        if filepath == f"insights/{playbook}/index.html":
+            return "0.8"
+    
+    # Glossary pages (lower priority)
+    if 'glossary' in filepath:
+        return "0.6"
+    
+    # All other insight chapters
+    if filepath.startswith('insights/'):
+        return "0.7"
+    
+    return "0.7"
+
+def get_changefreq(filepath):
+    """Determine change frequency based on page type"""
+    if filepath == "index.html":
+        return "weekly"
+    if filepath == "insights/index.html":
+        return "weekly"
+    return "monthly"
+
+def generate_sitemap(html_files):
+    """Generate sitemap.xml from processed HTML files"""
+    print('\nGenerating sitemap.xml...')
+    
+    # Sort files for consistent output
+    sorted_files = sorted(html_files)
+    
+    # Build XML content
+    xml_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+    ]
+    
+    for filepath in sorted_files:
+        # Convert filepath to URL path
+        url_path = filepath.replace('index.html', '')
+        if url_path and not url_path.endswith('/'):
+            url_path += '/'
+        if not url_path:
+            url_path = '/'
+        
+        full_url = BASE_URL + '/' + url_path.lstrip('/')
+        # Clean up double slashes (except in https://)
+        full_url = full_url.replace('///', '//')
+        if full_url.endswith('//'):
+            full_url = full_url[:-1]
+        
+        priority = get_priority(filepath)
+        changefreq = get_changefreq(filepath)
+        
+        xml_lines.append('  <url>')
+        xml_lines.append(f'    <loc>{full_url}</loc>')
+        xml_lines.append(f'    <changefreq>{changefreq}</changefreq>')
+        xml_lines.append(f'    <priority>{priority}</priority>')
+        xml_lines.append('  </url>')
+    
+    xml_lines.append('</urlset>')
+    
+    # Write sitemap
+    sitemap_path = os.path.join(ROOT_DIR, 'sitemap.xml')
+    with open(sitemap_path, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(xml_lines))
+    
+    print(f'  ✓ sitemap.xml ({len(html_files)} URLs)')
+
 def build():
     """Build all pages from templates"""
     print('Building site...\n')
@@ -121,6 +214,9 @@ def build():
             f.write(content)
         
         print(f'  ✓ {filepath}')
+    
+    # Generate sitemap
+    generate_sitemap(html_files)
     
     print(f'\nBuild complete! {len(html_files)} files generated.')
     return True
