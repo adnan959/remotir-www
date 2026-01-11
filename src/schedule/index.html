@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Call - Book Your GTM Strategy Session | Remotir</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Schedule a Call - Book Your GTM Strategy Session | Remotir">
+    <meta name="description" content="Schedule a strategy call with Remotir to discuss your GTM infrastructure and revenue growth challenges. Get expert guidance on building predictable revenue.">
+    <meta name="keywords" content="schedule call, GTM consultation, revenue strategy call, sales consultation, B2B strategy session">
+    <meta name="author" content="Remotir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.remotir.com/schedule/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.remotir.com/schedule/">
+    <meta property="og:title" content="Schedule a Call - Book Your GTM Strategy Session | Remotir">
+    <meta property="og:description" content="Schedule a strategy call with Remotir to discuss your GTM infrastructure and revenue growth challenges.">
+    <meta property="og:image" content="https://www.remotir.com/assets/og-image.png">
+    <meta property="og:site_name" content="Remotir">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.remotir.com/schedule/">
+    <meta name="twitter:title" content="Schedule a Call - Book Your GTM Strategy Session | Remotir">
+    <meta name="twitter:description" content="Schedule a strategy call with Remotir to discuss your GTM infrastructure and revenue growth challenges.">
+    <meta name="twitter:image" content="https://www.remotir.com/assets/og-image.png">
+    
+    <!-- Theme -->
+    <meta name="theme-color" content="#05052c">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/theme.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/components.css">
+    
+    <!-- Cal.com -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", {origin:"https://cal.com"});
+        Cal("ui", {"theme":"light","styles":{"branding":{"brandColor":"#2970FF"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+    
+    <style>
+        /* Schedule Page Specific Styles */
+        .schedule-hero {
+            padding: var(--space-16) 0 var(--space-12);
+            text-align: center;
+        }
+        
+        .schedule-hero__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-4);
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-sm);
+            font-weight: var(--font-medium);
+            color: #a5b4fc;
+            margin-bottom: var(--space-6);
+        }
+        
+        .schedule-hero__badge svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .schedule-hero__title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: var(--font-bold);
+            line-height: var(--leading-tight);
+            letter-spacing: var(--tracking-tight);
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-6);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .schedule-hero__subtitle {
+            font-size: var(--text-xl);
+            color: var(--color-text-secondary);
+            line-height: var(--leading-relaxed);
+            max-width: 600px;
+            margin: 0 auto var(--space-10);
+        }
+        
+        /* Trust indicators */
+        .trust-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-8);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-8);
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--text-sm);
+            color: var(--color-text-muted);
+        }
+        
+        .trust-item svg {
+            width: 20px;
+            height: 20px;
+            color: #10b981;
+        }
+        
+        /* Cal.com Container */
+        .calendly-section {
+            padding: 0 0 var(--space-20);
+        }
+        
+        .calendly-wrapper {
+            background: transparent;
+            border-radius: var(--radius-xl);
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .cal-inline-widget {
+            min-width: 320px;
+            width: 100%;
+            height: 750px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            .cal-inline-widget {
+                height: 900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- =========================================================================
+         NAVIGATION
+         ========================================================================= -->
+    {{> nav activeNav="schedule" }}
+
+    <!-- =========================================================================
+         MAIN CONTENT
+         ========================================================================= -->
+    <main>
+        <div style="height: var(--nav-height);"></div>
+        
+        <!-- Hero Section -->
+        <section class="schedule-hero">
+            <div class="container">
+                <span class="schedule-hero__badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    30 Min Discovery Call
+                </span>
+                <h1 class="schedule-hero__title">Book a Free Strategy Call</h1>
+                <p class="schedule-hero__subtitle">We'll learn about your business, share a bit about our process, and see if there's a fit. No hard pitch, just value.</p>
+                
+                <div class="trust-row">
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <span>No obligation</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <span>Expert insights</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <span>Actionable next steps</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Cal.com Section -->
+        <section class="calendly-section">
+            <div class="container">
+                <div class="calendly-wrapper">
+                    <div class="cal-inline-widget" id="my-cal-inline"></div>
+                    <script type="text/javascript">
+                        Cal("inline", {
+                            calLink: "remotir/15",
+                            elementOrSelector: "#my-cal-inline",
+                            config: {"layout":"month_view","theme":"light"}
+                        });
+                    </script>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- =========================================================================
+         FOOTER
+         ========================================================================= -->
+    {{> footer }}

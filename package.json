@@ -1,0 +1,10 @@
+{
+  "name": "remotir-www",
+  "version": "1.0.0",
+  "description": "Remotir marketing website",
+  "scripts": {
+    "build": "python3 build.py",
+    "build:node": "node build.js"
+  },
+  "private": true
+}

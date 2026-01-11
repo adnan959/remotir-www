@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demand Architecture: Introduction - Architecting Demand | Remotir</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Demand Architecture: Introduction | Remotir">
+    <meta name="description" content="Why 90% of B2B marketing fails and The 4 Lens Framework that fixes it. The system that turns marketing spend into revenue.">
+    <meta name="keywords" content="demand architecture, B2B marketing, 4 lens framework, demand efficiency ratio, lead generation, customer acquisition">
+    <meta name="author" content="Remotir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.remotir.com/insights/architecting-demand/introduction/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.remotir.com/insights/architecting-demand/introduction/">
+    <meta property="og:title" content="Demand Architecture: Introduction | Remotir">
+    <meta property="og:description" content="Why 90% of B2B marketing fails and The 4 Lens Framework that fixes it. The system that turns marketing spend into revenue.">
+    <meta property="og:image" content="https://www.remotir.com/assets/og-image.png">
+    <meta property="og:site_name" content="Remotir">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.remotir.com/insights/architecting-demand/introduction/">
+    <meta name="twitter:title" content="Demand Architecture: Introduction | Remotir">
+    <meta name="twitter:description" content="Why 90% of B2B marketing fails and The 4 Lens Framework that fixes it. The system that turns marketing spend into revenue.">
+    <meta name="twitter:image" content="https://www.remotir.com/assets/og-image.png">
+    
+    <!-- Theme -->
+    <meta name="theme-color" content="#05052c">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles/theme.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/pages/insights.css">
+</head>
+<body>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+            <!-- Logo -->
+            <a href="/" class="nav__logo" aria-label="Remotir Home">
+                <img src="/assets/remotir-logo.png" alt="Remotir" height="33">
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="nav__links">
+                <a href="/" class="nav__link">Home</a>
+                <div class="nav__dropdown">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                        Your Problems
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__dropdown-menu">
+                        <a href="/pmf-failure/" class="nav__dropdown-item">PMF Failure</a>
+                        <a href="/unpredictable-pipeline/" class="nav__dropdown-item">Unpredictable Pipeline</a>
+                    </div>
+                </div>
+                <div class="nav__dropdown">
+                    <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                        Our Solutions
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__dropdown-menu">
+                        <a href="/pmf-sprint/" class="nav__dropdown-item">PMF Sprint</a>
+                        <a href="/predictable-revenue/" class="nav__dropdown-item">Predictable Revenue</a>
+                    </div>
+                </div>
+                <a href="/results/" class="nav__link">Impact</a>
+                
+                <!-- Insights Mega Dropdown -->
+                <div class="nav__mega-dropdown">
+                    <button class="nav__dropdown-trigger nav__dropdown-trigger--active" aria-expanded="false" aria-haspopup="true">
+                        Insights
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="nav__mega-dropdown-panel">
+                        <div class="mega-dropdown__categories">
+                            <a href="/insights/0-100k-playbook/" class="mega-dropdown__category" data-playbook="0-100k">$0 to $100k Playbook<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/insights/architecting-demand/" class="mega-dropdown__category is-active" data-playbook="demand">Architecting Demand<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/insights/pipeline-physics/" class="mega-dropdown__category" data-playbook="pipeline">Pipeline Physics<svg class="mega-dropdown__category-arrow" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <div class="mega-dropdown__divider"></div>
+                            <span class="mega-dropdown__category mega-dropdown__category--disabled">Calculators<span class="mega-dropdown__badge">Soon</span></span>
+                        </div>
+                        <div class="mega-dropdown__chapters" data-playbook="0-100k"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/0-100k-playbook/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/0-100k-playbook/validation-fallacy/" class="mega-dropdown__chapter-link">The Validation Fallacy</a><a href="/insights/0-100k-playbook/zero-dollar-customer/" class="mega-dropdown__chapter-link">Zero Dollar Customer</a><a href="/insights/0-100k-playbook/pricing-the-painkiller/" class="mega-dropdown__chapter-link">Pricing the Painkiller</a><a href="/insights/0-100k-playbook/forensic-persona-audit/" class="mega-dropdown__chapter-link">Forensic Persona Audit</a><a href="/insights/0-100k-playbook/painkiller-narrative/" class="mega-dropdown__chapter-link">Painkiller Narrative</a><a href="/insights/0-100k-playbook/10k-mrr-trap/" class="mega-dropdown__chapter-link">The $10k MRR Trap</a><a href="/insights/0-100k-playbook/founder-led-sales/" class="mega-dropdown__chapter-link">Founder-Led Sales</a><a href="/insights/0-100k-playbook/channel-physics/" class="mega-dropdown__chapter-link">Channel Physics</a><a href="/insights/0-100k-playbook/unit-economics/" class="mega-dropdown__chapter-link">Unit Economics</a><a href="/insights/0-100k-playbook/100k-inflection/" class="mega-dropdown__chapter-link">The $100k Inflection</a><a href="/insights/0-100k-playbook/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/0-100k-playbook/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                        <div class="mega-dropdown__chapters is-visible" data-playbook="demand"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/architecting-demand/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/architecting-demand/leads-delusion/" class="mega-dropdown__chapter-link">The Leads Delusion</a><a href="/insights/architecting-demand/platform-problem/" class="mega-dropdown__chapter-link">The Platform Problem</a><a href="/insights/architecting-demand/agency-problem/" class="mega-dropdown__chapter-link">The Agency Problem</a><a href="/insights/architecting-demand/sales-marketing-divide/" class="mega-dropdown__chapter-link">The Sales-Marketing Divide</a><a href="/insights/architecting-demand/4-lens-framework/" class="mega-dropdown__chapter-link">The 4 Lens Framework</a><a href="/insights/architecting-demand/icp-architecture/" class="mega-dropdown__chapter-link">ICP Architecture</a><a href="/insights/architecting-demand/message-engineering/" class="mega-dropdown__chapter-link">Message Engineering</a><a href="/insights/architecting-demand/channel-selection/" class="mega-dropdown__chapter-link">Channel Selection</a><a href="/insights/architecting-demand/execution-discipline/" class="mega-dropdown__chapter-link">Execution Discipline</a><a href="/insights/architecting-demand/linkedin-playbook/" class="mega-dropdown__chapter-link">LinkedIn Playbook</a><a href="/insights/architecting-demand/meta-playbook/" class="mega-dropdown__chapter-link">Meta Playbook</a><a href="/insights/architecting-demand/google-playbook/" class="mega-dropdown__chapter-link">Google Playbook</a><a href="/insights/architecting-demand/content-engine/" class="mega-dropdown__chapter-link">Content Engine</a><a href="/insights/architecting-demand/demand-audit/" class="mega-dropdown__chapter-link">Demand Audit</a><a href="/insights/architecting-demand/attribution-reality/" class="mega-dropdown__chapter-link">Attribution Reality</a><a href="/insights/architecting-demand/scaling-demand/" class="mega-dropdown__chapter-link">Scaling Demand</a><a href="/insights/architecting-demand/demand-os/" class="mega-dropdown__chapter-link">Demand Operating System</a><a href="/insights/architecting-demand/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/architecting-demand/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                        <div class="mega-dropdown__chapters" data-playbook="pipeline"><span class="mega-dropdown__chapters-header">Chapters</span><a href="/insights/pipeline-physics/introduction/" class="mega-dropdown__chapter-link">Introduction</a><a href="/insights/pipeline-physics/forecast-delusion/" class="mega-dropdown__chapter-link">The Forecast Delusion</a><a href="/insights/pipeline-physics/pipeline-math/" class="mega-dropdown__chapter-link">Pipeline Math</a><a href="/insights/pipeline-physics/velocity-equation/" class="mega-dropdown__chapter-link">The Velocity Equation</a><a href="/insights/pipeline-physics/stage-economics/" class="mega-dropdown__chapter-link">Stage Economics</a><a href="/insights/pipeline-physics/conversion-physics/" class="mega-dropdown__chapter-link">Conversion Physics</a><a href="/insights/pipeline-physics/time-kills-deals/" class="mega-dropdown__chapter-link">Time Kills Deals</a><a href="/insights/pipeline-physics/pipeline-debt/" class="mega-dropdown__chapter-link">Pipeline Debt</a><a href="/insights/pipeline-physics/forecasting-reality/" class="mega-dropdown__chapter-link">Forecasting Reality</a><a href="/insights/pipeline-physics/pipeline-operations/" class="mega-dropdown__chapter-link">Pipeline Operations</a><a href="/insights/pipeline-physics/scaling-pipeline/" class="mega-dropdown__chapter-link">Scaling Pipeline</a><a href="/insights/pipeline-physics/glossary/" class="mega-dropdown__chapter-link">Glossary</a><a href="/insights/pipeline-physics/" class="mega-dropdown__view-all">View All Chapters →</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="nav__actions">
+                <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="nav__mobile" id="mobile-nav">
+            <a href="/" class="nav__link">Home</a>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Your Problems</span>
+                <a href="/pmf-failure/" class="nav__link">PMF Failure</a>
+                <a href="/unpredictable-pipeline/" class="nav__link">Unpredictable Pipeline</a>
+            </div>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Our Solutions</span>
+                <a href="/pmf-sprint/" class="nav__link">PMF Sprint</a>
+                <a href="/predictable-revenue/" class="nav__link">Predictable Revenue</a>
+            </div>
+            
+            <a href="/results/" class="nav__link">Impact</a>
+            
+            <div class="nav__mobile-group">
+                <span class="nav__mobile-header">Insights</span>
+                <a href="/insights/0-100k-playbook/" class="nav__link">$0 to $100k Playbook</a>
+                <a href="/insights/architecting-demand/" class="nav__link">Architecting Demand</a>
+                <a href="/insights/pipeline-physics/" class="nav__link">Pipeline Physics</a>
+            </div>
+            
+            <a href="/schedule/" class="btn btn--primary">Schedule a Call</a>
+        </div>
+    </nav>
+
+
+    <main>
+        <div style="height: var(--nav-height);"></div>
+        
+        <article class="chapter-page">
+            <div class="chapter-container">
+                
+                <!-- Breadcrumb -->
+                <nav class="chapter-breadcrumb" aria-label="Breadcrumb">
+                    <a href="/insights/">Insights</a>
+                    <span class="chapter-breadcrumb__separator">/</span>
+                    <a href="/insights/architecting-demand/">Architecting Demand</a>
+                    <span class="chapter-breadcrumb__separator">/</span>
+                    <span class="chapter-breadcrumb__current">Introduction</span>
+                </nav>
+                
+                <!-- Chapter Header -->
+                <header class="chapter-header">
+                    <span class="chapter-header__label">Architecting Demand · Introduction</span>
+                    <h1 class="chapter-header__title">The System That Turns Marketing Spend Into Revenue</h1>
+                    
+                    <p class="chapter-header__summary">
+                        <strong>Why 90% of B2B Marketing Fails and The 4 Lens Framework That Fixes It</strong>
+                    </p>
+                </header>
+                
+                <!-- Chapter Content -->
+                <div class="chapter-content">
+                    
+                    <h2>Introduction: The Demand Crisis</h2>
+                    
+                    <p>Every year, B2B companies pour billions into demand generation.</p>
+                    
+                    <p>LinkedIn Ads. Meta campaigns. Google Ads. Content marketing. Events. Webinars. Influencer partnerships. ABM platforms. Intent data providers. The MarTech stack grows. The budgets grow. The headcount grows.</p>
+                    
+                    <p>The pipeline does not.</p>
+                    
+                    <p><strong>The data is damning.</strong> Forrester reports that less than 1% of leads convert to customers. SiriusDecisions found that 90% of marketing leads never convert to opportunities. Gartner research shows that the average B2B buyer is 70% through their decision process before engaging with sales, meaning most "leads" are either too early or too late.</p>
+                    
+                    <p>Companies respond to these failures predictably. They increase spend. They hire more marketers. They buy more tools. They switch agencies. They try new channels.</p>
+                    
+                    <p><strong>Nothing changes.</strong></p>
+                    
+                    <p>The pipeline remains anemic. Sales complains about lead quality. Marketing complains about sales follow-up. Finance wonders where the money went. The board asks why customer acquisition cost keeps rising while growth keeps slowing.</p>
+                    
+                    <p>This is the demand crisis. It is not new. It is not temporary. It is structural.</p>
+                    
+                    <hr>
+                    
+                    <h2>The Manufactured Crisis</h2>
+                    
+                    <p>The demand crisis is not an accident. It is manufactured by three forces with misaligned incentives.</p>
+                    
+                    <h3>Force 1: Platforms</h3>
+                    
+                    <p>LinkedIn, Meta, and Google run auctions. Your goal is to pay as little as possible for each customer. Their goal is to extract as much as possible for each impression.</p>
+                    
+                    <p>Every algorithm update, every "optimization recommendation," every default setting serves their revenue, not yours. When your targeting gets precise, they expand your audience. When your CPL drops, they raise auction floors. When you find efficiency, they capture it.</p>
+                    
+                    <p>Platforms are not partners. They are adversaries with better data.</p>
+                    
+                    <h3>Force 2: Agencies</h3>
+                    
+                    <p>Traditional agencies earn fees tied to media spend. More spend means more fees. Efficient spend means less revenue.</p>
+                    
+                    <p>This incentive structure guarantees misalignment. An agency that reduces your budget by 40% while maintaining results has just cut their own revenue by 40%. No rational actor does this voluntarily.</p>
+                    
+                    <p>The agency model is designed to perpetuate spend, not generate results.</p>
+                    
+                    <h3>Force 3: Marketing Culture</h3>
+                    
+                    <p>The marketing profession has optimized for the wrong metrics. Lead volume. MQL counts. CPL. Impressions. Engagement rates.</p>
+                    
+                    <p>None of these metrics measure what matters: profitable customer acquisition.</p>
+                    
+                    <p>A campaign that generates 1,000 leads at $50 CPL looks successful. If zero of those leads become customers, the campaign burned $50,000. But by marketing's metrics, it was a win.</p>
+                    
+                    <p>This is not incompetence. It is the predictable result of measuring activity instead of outcomes.</p>
+                    
+                    <hr>
+                    
+                    <h2>The Missing Element</h2>
+                    
+                    <p>There is a fourth force that explains why demand generation fails so consistently. It is less obvious than platforms, agencies, and metrics. But it may be the most important.</p>
+                    
+                    <p><strong>Most marketing is built by people who have never sold anything.</strong></p>
+                    
+                    <p>Marketing teams are filled with talented professionals: brand strategists, content creators, designers, analysts, campaign managers. They understand positioning. They understand creative. They understand platforms.</p>
+                    
+                    <p>They do not understand why people buy.</p>
+                    
+                    <p>Buying is a psychological process. It involves pain recognition, risk assessment, objection processing, and decision justification. It follows patterns that salespeople learn through thousands of conversations. It requires understanding not just what people say they want, but what actually moves them to act.</p>
+                    
+                    <p><strong>Marketers study markets. Salespeople study buyers.</strong></p>
+                    
+                    <p>This gap manifests everywhere:</p>
+                    <ul>
+                        <li>Ad copy that describes features instead of articulating pain</li>
+                        <li>Landing pages that explain the product instead of diagnosing the problem</li>
+                        <li>Lead magnets that attract researchers instead of buyers</li>
+                        <li>Nurture sequences that educate instead of compel</li>
+                        <li>Targeting that reaches job titles instead of people with urgent problems</li>
+                    </ul>
+                    
+                    <p>The result is demand generation that generates attention but not action. Leads that look qualified on paper but never convert. Pipeline that exists in dashboards but not in reality.</p>
+                    
+                    <p><strong>Demand generation must be built by people who understand the science of selling.</strong> Customer psychology. Objection patterns. The mechanics of decision-making. The difference between interest and intent.</p>
+                    
+                    <p>Without sales DNA at the core, demand generation is an expensive exercise in lead generation theater.</p>
+                    
+                    <hr>
+                    
+                    <h2>The Demand Efficiency Ratio</h2>
+                    
+                    <p>Before building the solution, we need a metric that actually matters.</p>
+                    
+                    <p>The industry measures CPL (Cost Per Lead). CPL is a vanity metric. A lead is not a customer. A lead is not even a prospect. A lead is a name in a database that may or may not represent someone who could ever buy.</p>
+                    
+                    <p><strong>The Demand Efficiency Ratio (DER)</strong> measures what matters:</p>
+                    
+                    <p><strong>DER = Revenue Generated from Demand Activities / Total Demand Spend</strong></p>
+                    
+                    <p>A DER of 3.0 means every dollar of demand spend generates three dollars of revenue. A DER of 0.5 means you are burning money.</p>
+                    
+                    <p><strong>DER Benchmarks:</strong></p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DER</th>
+                                <th>Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 1.0</td>
+                                <td>Losing money on demand generation</td>
+                            </tr>
+                            <tr>
+                                <td>1.0 - 2.0</td>
+                                <td>Breaking even to marginally profitable</td>
+                            </tr>
+                            <tr>
+                                <td>2.0 - 3.0</td>
+                                <td>Healthy returns; maintain and optimize</td>
+                            </tr>
+                            <tr>
+                                <td>3.0 - 5.0</td>
+                                <td>Strong returns; scale aggressively</td>
+                            </tr>
+                            <tr>
+                                <td>Above 5.0</td>
+                                <td>Exceptional; likely under-investing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>Most B2B companies operate between 0.5 and 1.5. They are either losing money or barely breaking even on demand generation. They continue because they do not measure DER. They measure CPL, which tells them nothing about profitability.</p>
+                    
+                    <p><strong>DER becomes the north star.</strong> Every decision, every optimization, every channel choice should be evaluated by its impact on DER.</p>
+                    
+                    <hr>
+                    
+                    <h2>The 4 Lens Framework: Overview</h2>
+                    
+                    <p>Profitable demand generation requires four conditions to be simultaneously true. Miss any one, and the entire system fails.</p>
+                    
+                    <h3>Lens 1: ICP Architecture</h3>
+                    <p>Are you reaching the exact people who have the problem you solve, the authority to buy, and the urgency to act now?</p>
+                    
+                    <h3>Lens 2: Message Engineering</h3>
+                    <p>Does your message articulate their pain better than they can articulate it themselves? Does it compel action, not just attention?</p>
+                    
+                    <h3>Lens 3: Channel Selection</h3>
+                    <p>Is the channel appropriate for your stage, your ICP, and your economics? Is it where your buyers actually are, in a mindset where they will engage?</p>
+                    
+                    <h3>Lens 4: Execution Discipline</h3>
+                    <p>Is your creative, copy, and operational process optimized for performance? Are you iterating fast enough to outpace creative decay?</p>
+                    
+                    <p>These four lenses are not sequential. They are simultaneous. Brilliant targeting with weak messaging fails. Perfect messaging on the wrong channel fails. The right channel with poor execution fails.</p>
+                    
+                    <p><strong>All four lenses must be in focus for demand generation to produce profitable customers.</strong></p>
+                    
+                    <p>The framework is not complicated. But it is demanding. Each lens requires precision that most organizations do not achieve. The gap between "pretty good" and "precise" is the difference between burning money and building pipeline.</p>
+                    
+                    <hr>
+                    
+                    <h2>What This System Covers</h2>
+                    
+                    <p>Demand Architecture provides the complete infrastructure for building profitable demand generation.</p>
+                    
+                    <h3>Part 1: The Problem (Chapters 1-4)</h3>
+                    
+                    <p>Understanding why demand generation fails for 90% of companies, and the structural forces that guarantee failure.</p>
+                    
+                    <ul>
+                        <li><strong>Chapter 1: The Leads Delusion</strong> exposes the false belief that more leads solve revenue problems.</li>
+                        <li><strong>Chapter 2: The Platform Problem</strong> details how LinkedIn, Meta, and Google extract maximum spend.</li>
+                        <li><strong>Chapter 3: The Agency Problem</strong> explains why fee structures guarantee misalignment.</li>
+                        <li><strong>Chapter 4: The Sales-Marketing Divide</strong> addresses why marketing built without sales DNA fails.</li>
+                    </ul>
+                    
+                    <h3>Part 2: The Framework (Chapters 5-9)</h3>
+                    
+                    <p>The 4 Lens Framework in complete detail, with diagnostics, implementation guides, and common failure modes.</p>
+                    
+                    <ul>
+                        <li><strong>Chapter 5: The 4 Lens Framework</strong> provides the complete architecture.</li>
+                        <li><strong>Chapter 6: Lens 1 - ICP Architecture</strong> builds targeting precision.</li>
+                        <li><strong>Chapter 7: Lens 2 - Message Engineering</strong> transforms features into painkillers.</li>
+                        <li><strong>Chapter 8: Lens 3 - Channel Selection</strong> matches channels to stage and economics.</li>
+                        <li><strong>Chapter 9: Lens 4 - Execution Discipline</strong> creates operational excellence.</li>
+                    </ul>
+                    
+                    <h3>Part 3: Channel Playbooks (Chapters 10-13)</h3>
+                    
+                    <p>Platform-specific tactical guides for the major B2B demand channels.</p>
+                    
+                    <ul>
+                        <li><strong>Chapter 10: The LinkedIn Playbook</strong> masters the most expensive B2B platform.</li>
+                        <li><strong>Chapter 11: The Meta Playbook</strong> makes a B2C platform work for B2B.</li>
+                        <li><strong>Chapter 12: The Google Playbook</strong> captures and creates demand through search.</li>
+                        <li><strong>Chapter 13: The Content Engine</strong> builds the only channel that compounds.</li>
+                    </ul>
+                    
+                    <h3>Part 4: Operations (Chapters 14-17)</h3>
+                    
+                    <p>The operational infrastructure for sustained, scalable demand generation.</p>
+                    
+                    <ul>
+                        <li><strong>Chapter 14: The Demand Audit</strong> diagnoses your current architecture.</li>
+                        <li><strong>Chapter 15: Attribution Reality</strong> addresses what you can and cannot measure.</li>
+                        <li><strong>Chapter 16: Scaling Demand Profitably</strong> grows spend without destroying economics.</li>
+                        <li><strong>Chapter 17: The Demand Operating System</strong> provides the complete operational framework.</li>
+                    </ul>
+                    
+                    <hr>
+                    
+                    <h2>Who This Is For</h2>
+                    
+                    <p>Demand Architecture serves multiple audiences at different stages.</p>
+                    
+                    <h3>Seed to Series A Founders</h3>
+                    <p>You have limited budget and cannot afford waste. Every dollar matters. Chapters 1-9 provide the foundation. Start with the 4 Lens Framework before spending anything on paid channels.</p>
+                    
+                    <h3>Series A to Series B Leaders</h3>
+                    <p>You have budget but need efficiency. The gap between your CAC and your targets is keeping you up at night. The full system applies. Pay particular attention to Channel Selection (Chapter 8) and Scaling Profitably (Chapter 16).</p>
+                    
+                    <h3>CMOs and Marketing Leaders</h3>
+                    <p>You own demand generation and need a framework that produces accountability. The Demand Audit (Chapter 14) and Operating System (Chapter 17) provide the structure. Use this to rebuild your function around outcomes, not activities.</p>
+                    
+                    <h3>Fractional CROs and Advisors</h3>
+                    <p>You parachute into broken demand engines and need to diagnose fast. Part 1 gives you the diagnostic framework. Part 4 gives you the operational playbook.</p>
+                    
+                    <hr>
+                    
+                    <h2>The Premise</h2>
+                    
+                    <p>Leads do not solve revenue problems. Customers solve revenue problems.</p>
+                    
+                    <p>The demand generation industry has spent decades optimizing for the wrong objective. It has created sophisticated machinery for generating names in databases while ignoring whether those names ever become customers.</p>
+                    
+                    <p><strong>Demand Architecture rewrites the objective.</strong> The goal is not leads. The goal is profitable customer acquisition. Every framework, every metric, every decision flows from this premise.</p>
+                    
+                    <p>The companies that win at demand generation are not the ones with the biggest budgets. They are the ones with the clearest architecture: precise targeting, painkiller messaging, stage-appropriate channels, and disciplined execution.</p>
+                    
+                    <p>The 4 Lens Framework provides that architecture. Built by people who understand sales. Measured by metrics that matter. Optimized for revenue, not vanity.</p>
+                    
+                    <p><strong>The demand crisis is real. But it is not inevitable.</strong></p>
+                    
+                    <!-- References -->
+                    <div class="chapter-references">
+                        <h3 class="chapter-references__title">References</h3>
+                        <ol class="chapter-references__list">
+                            <li><strong>Forrester (2024)</strong>. <em>B2B Lead Conversion Analysis.</em> <a href="https://forrester.com" target="_blank" rel="noopener">Link</a></li>
+                            <li><strong>SiriusDecisions (2023)</strong>. <em>Demand Generation Benchmark Study.</em> <a href="https://siriusdecisions.com" target="_blank" rel="noopener">Link</a></li>
+                            <li><strong>Gartner (2024)</strong>. <em>B2B Buying Journey Research.</em> <a href="https://gartner.com" target="_blank" rel="noopener">Link</a></li>
+                        </ol>
+                    </div>
+                    
+                </div>
+                
+                <!-- Chapter Navigation -->
+                <nav class="chapter-nav" aria-label="Chapter navigation">
+                    <div class="chapter-nav__link chapter-nav__link--prev" style="visibility: hidden;"></div>
+                    <a href="/insights/architecting-demand/leads-delusion/" class="chapter-nav__link chapter-nav__link--next">
+                        <span class="chapter-nav__label">Next →</span>
+                        <span class="chapter-nav__title">The Leads Delusion</span>
+                    </a>
+                </nav>
+                
+            </div>
+        </article>
+    </main>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <!-- Brand Column -->
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="Remotir Home">
+                        <img src="/assets/remotir-logo.png" alt="Remotir" height="33">
+                    </a>
+                    <p class="footer__description">Remotir is a GTM Infrastructure Firm. We design, install, and operate revenue systems that replace unvalidated burn with market-proven signal.</p>
+                </div>
+                
+                <!-- Link Columns -->
+                <div class="footer__columns">
+                    <!-- Solutions -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Solutions</h4>
+                        <div class="footer__column-links">
+                            <a href="/pmf-sprint/" class="footer__link">PMF Sprint</a>
+                            <a href="/predictable-revenue/" class="footer__link">Predictable Revenue</a>
+                            <a href="/pmf-failure/" class="footer__link">PMF Failure</a>
+                            <a href="/unpredictable-pipeline/" class="footer__link">Unpredictable Pipeline</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Studies -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Case Studies</h4>
+                        <div class="footer__column-links">
+                            <a href="/results/" class="footer__link">View All Results</a>
+                            <a href="/case-study-right-to-play/" class="footer__link">£20M Series A Validation</a>
+                            <a href="/case-study-efficiency-gain/" class="footer__link">66% Efficiency Gain</a>
+                            <a href="/case-study-d2c-transformation/" class="footer__link">600% D2C Volume Uplift</a>
+                            <a href="/case-study-pmf-pivot/" class="footer__link">137x ACV Increase</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Company -->
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Company</h4>
+                        <div class="footer__column-links">
+                            <a href="/insights/" class="footer__link">Insights</a>
+                            <a href="/schedule/" class="footer__link">Schedule a Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
+

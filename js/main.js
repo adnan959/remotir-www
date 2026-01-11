@@ -272,5 +272,74 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // =========================================================================
+    // MEGA DROPDOWN (Insights Navigation)
+    // =========================================================================
+    
+    const megaDropdown = document.querySelector('.nav__mega-dropdown');
+    
+    if (megaDropdown) {
+        const megaTrigger = megaDropdown.querySelector('.nav__dropdown-trigger');
+        const categories = megaDropdown.querySelectorAll('.mega-dropdown__category[data-playbook]');
+        const chapterPanels = megaDropdown.querySelectorAll('.mega-dropdown__chapters');
+        
+        // Toggle mega dropdown on click
+        if (megaTrigger) {
+            megaTrigger.addEventListener('click', (e) => {
+                e.stopPropagation();
+                
+                // Close regular dropdowns
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('is-open');
+                });
+                
+                // Toggle mega dropdown
+                megaDropdown.classList.toggle('is-open');
+            });
+        }
+        
+        // Switch chapters panel on category hover
+        categories.forEach(category => {
+            category.addEventListener('mouseenter', () => {
+                const playbook = category.dataset.playbook;
+                
+                // Update active category
+                categories.forEach(c => c.classList.remove('is-active'));
+                category.classList.add('is-active');
+                
+                // Show corresponding chapters panel
+                chapterPanels.forEach(panel => {
+                    if (panel.dataset.playbook === playbook) {
+                        panel.classList.add('is-visible');
+                    } else {
+                        panel.classList.remove('is-visible');
+                    }
+                });
+            });
+        });
+        
+        // Close mega dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav__mega-dropdown')) {
+                megaDropdown.classList.remove('is-open');
+            }
+        });
+        
+        // Close mega dropdown on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                megaDropdown.classList.remove('is-open');
+            }
+        });
+        
+        // Close mega dropdown when clicking a chapter link
+        const chapterLinks = megaDropdown.querySelectorAll('.mega-dropdown__chapter-link, .mega-dropdown__view-all');
+        chapterLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                megaDropdown.classList.remove('is-open');
+            });
+        });
+    }
 });
 

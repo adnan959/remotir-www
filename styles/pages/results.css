@@ -14,20 +14,20 @@
 }
 
 .results-header {
-    margin-bottom: 64px;
+    margin-bottom: var(--space-16);
 }
 
 .results-header__title {
-    font-size: 48px;
+    font-size: var(--heading-section);
     font-weight: var(--font-semibold);
     color: var(--color-text-primary);
-    line-height: 1.1;
-    letter-spacing: -0.96px;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
     margin-bottom: var(--space-2);
 }
 
 .results-header__subtitle {
-    font-size: 24px;
+    font-size: var(--heading-card);
     font-weight: var(--font-regular);
     color: var(--color-text-secondary);
     line-height: 38px;
@@ -37,13 +37,13 @@
 .case-studies-grid {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: var(--gap-cards);
 }
 
 .case-studies-grid__row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: var(--gap-cards);
 }
 
 .case-studies-grid__row--single {
@@ -57,14 +57,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 350px;
-    padding: 24px;
+    padding: var(--space-6);
     border-radius: var(--radius-md);
-    border: 1px solid #1f2b7b;
-    background: radial-gradient(
-        ellipse at 82% 13%,
-        rgba(34, 47, 134, 1) 0%,
-        rgba(24, 33, 94, 1) 100%
-    );
+    border: 1px solid var(--color-border-card);
+    background: var(--gradient-case-study);
     text-decoration: none;
     transition: transform var(--transition-base), 
                 border-color var(--transition-base),
@@ -73,8 +69,8 @@
 
 .case-study-card:hover {
     transform: translateY(-4px);
-    border-color: #2970FF;
-    box-shadow: 0 8px 32px rgba(41, 112, 255, 0.15);
+    border-color: var(--color-brand-blue);
+    box-shadow: var(--shadow-card-hover);
 }
 
 /* Card Icon */
@@ -95,12 +91,12 @@
 
 /* Card Title */
 .case-study-card__title {
-    font-size: 28px;
+    font-size: var(--text-4xl);
     font-weight: var(--font-medium);
     color: var(--color-text-primary);
-    line-height: 1.2;
-    letter-spacing: -0.56px;
-    margin-bottom: 18px;
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+    margin-bottom: var(--space-5);
 }
 
 .case-study-card__link {
