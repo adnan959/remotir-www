@@ -21,6 +21,11 @@
       "source": "/careers/customer-success-manager-account-manager",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/offers/predictable-revenue",
+      "destination": "/unpredictable-pipeline/",
+      "permanent": true
     }
   ]
 }
