@@ -330,6 +330,18 @@
     gap: var(--space-32);
 }
 
+.personas__header {
+    margin-bottom: calc(var(--space-32) * -0.5);
+}
+
+.personas__title {
+    font-size: var(--heading-hero);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+}
+
 .persona-block {
     display: flex;
     flex-direction: column;
@@ -433,6 +445,10 @@
         gap: var(--space-20);
     }
     
+    .personas__title {
+        font-size: var(--heading-section);
+    }
+    
     .persona-block__title {
         font-size: var(--heading-section-mobile);
     }
@@ -461,6 +477,10 @@
 @media (max-width: 640px) {
     .section--personas .container {
         gap: var(--space-16);
+    }
+    
+    .personas__title {
+        font-size: var(--heading-section-mobile);
     }
     
     .persona-block {
