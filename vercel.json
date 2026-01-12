@@ -1,4 +1,26 @@
 {
   "buildCommand": "python3 build.py",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/old-home-2",
+      "destination": "/unpredictable-pipeline/",
+      "permanent": true
+    },
+    {
+      "source": "/careers/social-media-marketing-manager",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/careers/sales-development-representative-sdr",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/careers/customer-success-manager-account-manager",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
 }
