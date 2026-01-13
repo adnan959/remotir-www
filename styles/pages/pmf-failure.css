@@ -2617,15 +2617,16 @@
 }
 
 .testimonials-v2__logo-mark {
-    height: 75px;
-    width: 90px;
+    height: 32px;
+    width: auto;
     flex-shrink: 0;
+    object-fit: contain;
 }
 
 .testimonials-v2__logo-text {
-    height: 32px;
+    height: 20px;
     width: auto;
-    max-width: 100px;
+    object-fit: contain;
 }
 
 .testimonials-v2__logo-ikigai-mark {
