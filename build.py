@@ -54,8 +54,8 @@ def process_partial(content, params):
 
 def replace_partials(content, partials):
     """Replace {{> partialName param="value" }} with partial content"""
-    # Match {{> partialName param="value" param2="value2" }}
-    pattern = r'\{\{>\s*(\w+)([^}]*)\}\}'
+    # Match {{> partialName param="value" param2="value2" }} (partialName can include hyphens)
+    pattern = r'\{\{>\s*([\w-]+)([^}]*)\}\}'
     
     def replacer(match):
         partial_name = match.group(1)

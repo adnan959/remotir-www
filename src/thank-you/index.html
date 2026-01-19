@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {{> head-scripts }}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - Your Call Has Been Scheduled | Remotir</title>
@@ -245,7 +246,7 @@
     </style>
 </head>
 <body>
-    {{> nav }}
+    {{> nav-landing }}
 
     <main>
         <div style="height: var(--nav-height);"></div>
@@ -297,87 +298,10 @@
             </div>
         </section>
         
-        <!-- Testimonials Section -->
-        <section class="thank-you-testimonials">
-            <div class="container">
-                <div class="thank-you-testimonials__header">
-                    <h2 class="thank-you-testimonials__title">What Remotir Can Do for You</h2>
-                    <p class="thank-you-testimonials__subtitle">These are the kinds of results you can expect when your sales motion clicks into place.</p>
-                </div>
-                
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <p class="testimonial-card__quote">"I was doing sales myself and hitting a wall. Remotir built the outreach, ran demos, and closed deals - all without me needing to hire. We went from zero to $30K in closed ARR in 6 weeks."</p>
-                        <div class="testimonial-card__author">
-                            <img src="/assets/testimonials/avatar-heather.png" alt="Heather" class="testimonial-card__avatar">
-                            <div>
-                                <p class="testimonial-card__name">Heather</p>
-                                <p class="testimonial-card__role">SaaS Founder, Pre-Seed Stage</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card">
-                        <p class="testimonial-card__quote">"We knew the product worked - we just didn't know how to scale it. Remotir set up our GTM engine and helped us close 3 new mid-market clients in under 8 weeks."</p>
-                        <div class="testimonial-card__author">
-                            <img src="/assets/testimonials/avatar-jordan.png" alt="Jordan" class="testimonial-card__avatar">
-                            <div>
-                                <p class="testimonial-card__name">Jordan</p>
-                                <p class="testimonial-card__role">Co-Founder, SMB SaaS Company</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card">
-                        <p class="testimonial-card__quote">"We had leads coming in, but no system to handle them. Remotir rebuilt our funnel, cleaned up our CRM, and gave us weekly deal flow. It finally feels repeatable."</p>
-                        <div class="testimonial-card__author">
-                            <img src="/assets/testimonials/avatar-david.png" alt="David" class="testimonial-card__avatar">
-                            <div>
-                                <p class="testimonial-card__name">David</p>
-                                <p class="testimonial-card__role">Head of Growth, VC-Backed Startup</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card">
-                        <p class="testimonial-card__quote">"I had a great product but hated selling. Remotir helped me refine my pitch, redesign my landing page, and run cold outreach that actually converted."</p>
-                        <div class="testimonial-card__author">
-                            <img src="/assets/testimonials/avatar-claire.png" alt="Claire" class="testimonial-card__avatar">
-                            <div>
-                                <p class="testimonial-card__name">Claire</p>
-                                <p class="testimonial-card__role">Founder, B2B Platform</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card">
-                        <p class="testimonial-card__quote">"We had SDRs and tooling, but still no consistency. Remotir stepped in, audited our GTM, and rebuilt it around real data. Pipeline doubled in 2 months."</p>
-                        <div class="testimonial-card__author">
-                            <img src="/assets/testimonials/avatar-priya.png" alt="Priya" class="testimonial-card__avatar">
-                            <div>
-                                <p class="testimonial-card__name">Priya</p>
-                                <p class="testimonial-card__role">RevOps Lead, Series A SaaS Company</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card">
-                        <p class="testimonial-card__quote">"We were about to launch but had no sales plan. Remotir built everything - sequences, decks, CRM, even the site copy. We were live and closing demos in 3 weeks."</p>
-                        <div class="testimonial-card__author">
-                            <img src="/assets/testimonials/avatar-luis.png" alt="Luis" class="testimonial-card__avatar">
-                            <div>
-                                <p class="testimonial-card__name">Luis</p>
-                                <p class="testimonial-card__role">Co-Founder, Bootstrapped SaaS Startup</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         
     </main>
 
-    {{> footer }}
+    {{> footer-landing }}
 
 </body>
 </html>
