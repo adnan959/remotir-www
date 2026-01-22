@@ -392,6 +392,7 @@ a.btn--sprint-cta:hover {
 /* Responsive - Mobile */
 @media (max-width: 768px) {
     .sprint-hero {
+        padding-top: calc(var(--nav-height, 80px) - 8px);
         padding-bottom: 280px;
     }
     
