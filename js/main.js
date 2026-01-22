@@ -39,6 +39,159 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     initUTMTracking();
+
+    // =========================================================================
+    // NAV THEME SWITCHING (for pages with data-nav-theme sections)
+    // =========================================================================
+    
+    const initNavThemeSwitching = () => {
+        const nav = document.querySelector('.nav--theme-switch');
+        if (!nav) return;
+        
+        const sections = document.querySelectorAll('[data-nav-theme]');
+        if (sections.length === 0) return;
+        
+        // Set initial theme to dark
+        nav.classList.add('nav--dark');
+        
+        const updateNavTheme = () => {
+            const navHeight = nav.offsetHeight;
+            const scrollPosition = window.scrollY + navHeight + 10; // Add small offset
+            
+            let currentTheme = 'dark'; // Default to dark (for hero)
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    currentTheme = section.getAttribute('data-nav-theme');
+                }
+            });
+            
+            // Update nav classes
+            if (currentTheme === 'light') {
+                nav.classList.add('nav--light');
+                nav.classList.remove('nav--dark');
+            } else {
+                nav.classList.add('nav--dark');
+                nav.classList.remove('nav--light');
+            }
+        };
+        
+        // Update active link highlighting for anchor links
+        const anchorLinks = nav.querySelectorAll('.nav__link--anchor');
+        const updateActiveLink = () => {
+            if (anchorLinks.length === 0) return;
+            
+            const navHeight = nav.offsetHeight;
+            const scrollPosition = window.scrollY + navHeight;
+            const viewportHeight = window.innerHeight;
+            
+            // Get all section IDs that have corresponding nav links
+            const navSectionIds = Array.from(anchorLinks).map(link => 
+                link.getAttribute('href').replace('#', '')
+            );
+            
+            // Get only the sections that correspond to nav links
+            const navSections = navSectionIds
+                .map(id => document.getElementById(id))
+                .filter(section => section !== null);
+            
+            if (navSections.length === 0) return;
+            
+            let currentSection = '';
+            
+            // Find which section is currently most visible
+            for (let i = 0; i < navSections.length; i++) {
+                const section = navSections[i];
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionBottom = sectionTop + sectionHeight;
+                
+                // Check if the scroll position is within this section
+                // Use a threshold of 20% into the section for better UX
+                const threshold = Math.min(sectionHeight * 0.2, 150);
+                
+                if (scrollPosition >= sectionTop - threshold && scrollPosition < sectionBottom) {
+                    currentSection = section.getAttribute('id');
+                    break; // Found the current section, stop looking
+                }
+            }
+            
+            // If we're past all sections, highlight the last one
+            if (!currentSection && navSections.length > 0) {
+                const lastSection = navSections[navSections.length - 1];
+                const lastSectionTop = lastSection.offsetTop;
+                if (scrollPosition >= lastSectionTop) {
+                    currentSection = lastSection.getAttribute('id');
+                }
+            }
+            
+            // Update active state on links
+            anchorLinks.forEach(link => {
+                const linkTarget = link.getAttribute('href').replace('#', '');
+                if (linkTarget === currentSection) {
+                    link.classList.add('is-active');
+                } else {
+                    link.classList.remove('is-active');
+                }
+            });
+        };
+        
+        // Throttle scroll event for performance
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateNavTheme();
+                    updateActiveLink();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        
+        // Initial check
+        updateNavTheme();
+        updateActiveLink();
+        
+        // Smooth scroll for anchor links
+        anchorLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const navHeight = nav.offsetHeight;
+                    const targetPosition = targetSection.offsetTop - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileNav = document.querySelector('.nav__mobile');
+                    const mobileToggle = document.querySelector('.nav__mobile-toggle');
+                    if (mobileNav && mobileNav.classList.contains('is-open')) {
+                        mobileNav.classList.remove('is-open');
+                        mobileToggle.setAttribute('aria-expanded', 'false');
+                        document.body.style.overflow = '';
+                        
+                        // Reset icons
+                        const openIcon = mobileToggle.querySelector('.nav__mobile-icon--open');
+                        const closeIcon = mobileToggle.querySelector('.nav__mobile-icon--close');
+                        if (openIcon) openIcon.style.display = 'block';
+                        if (closeIcon) closeIcon.style.display = 'none';
+                    }
+                }
+            });
+        });
+    };
+    
+    initNavThemeSwitching();
     // =========================================================================
     // FADE-IN ANIMATIONS
     // =========================================================================
@@ -153,37 +306,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     
     if (mobileToggle && mobileNav) {
-        mobileToggle.addEventListener('click', () => {
-            const isOpen = mobileNav.classList.toggle('is-open');
-            mobileToggle.setAttribute('aria-expanded', isOpen);
+        const openIcon = mobileToggle.querySelector('.nav__mobile-icon--open');
+        const closeIcon = mobileToggle.querySelector('.nav__mobile-icon--close');
+        
+        const openMobileMenu = () => {
+            mobileNav.classList.add('is-open');
+            mobileToggle.setAttribute('aria-expanded', 'true');
+            body.style.overflow = 'hidden';
             
-            // Toggle hamburger/close icon
-            const icon = mobileToggle.querySelector('svg');
-            if (isOpen) {
-                icon.innerHTML = `
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                `;
-                body.style.overflow = 'hidden';
+            if (openIcon) openIcon.style.display = 'none';
+            if (closeIcon) closeIcon.style.display = 'block';
+        };
+        
+        const closeMobileMenu = () => {
+            mobileNav.classList.remove('is-open');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            body.style.overflow = '';
+            
+            if (openIcon) openIcon.style.display = 'block';
+            if (closeIcon) closeIcon.style.display = 'none';
+        };
+        
+        mobileToggle.addEventListener('click', () => {
+            if (mobileNav.classList.contains('is-open')) {
+                closeMobileMenu();
             } else {
-                icon.innerHTML = `
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                `;
-                body.style.overflow = '';
+                openMobileMenu();
             }
         });
         
         // Close mobile nav when clicking a link
-        const mobileLinks = mobileNav.querySelectorAll('.nav__link');
+        const mobileLinks = mobileNav.querySelectorAll('.nav__link, .btn');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
-                mobileNav.classList.remove('is-open');
-                mobileToggle.setAttribute('aria-expanded', 'false');
-                body.style.overflow = '';
-                
-                const icon = mobileToggle.querySelector('svg');
-                icon.innerHTML = `
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                `;
+                closeMobileMenu();
             });
         });
     }

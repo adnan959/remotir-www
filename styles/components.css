@@ -119,6 +119,107 @@
     border-bottom: 1px solid var(--color-border);
 }
 
+/* Theme-switching Navigation */
+.nav--theme-switch {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark theme (default) */
+.nav--theme-switch.nav--dark {
+    background-color: var(--color-bg-primary);
+    border-bottom-color: var(--color-border);
+}
+
+.nav--theme-switch.nav--dark .nav__link,
+.nav--theme-switch.nav--dark .nav__dropdown-trigger {
+    color: var(--color-text-muted);
+}
+
+.nav--theme-switch.nav--dark .nav__link:hover,
+.nav--theme-switch.nav--dark .nav__link.is-active,
+.nav--theme-switch.nav--dark .nav__dropdown-trigger:hover {
+    color: var(--color-text-primary);
+}
+
+.nav--theme-switch.nav--dark .nav__mobile-toggle {
+    color: var(--color-text-primary);
+}
+
+/* Light theme */
+.nav--theme-switch.nav--light {
+    background-color: #ffffff;
+    border-bottom-color: #e9eaeb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Split logo (SVG mark + text) for theme-switch nav */
+.nav__logo--split {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav__logo-mark {
+    width: 34px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.nav__logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff; /* Default to white for dark backgrounds */
+    transition: color 0.3s ease;
+}
+
+/* Dark mode: white text */
+.nav--theme-switch.nav--dark .nav__logo-text,
+.nav--dark .nav__logo-text {
+    color: #ffffff;
+}
+
+/* Light mode: dark text */
+.nav--theme-switch.nav--light .nav__logo-text,
+.nav--light .nav__logo-text {
+    color: #181d27;
+}
+
+.nav--theme-switch.nav--light .nav__link,
+.nav--theme-switch.nav--light .nav__dropdown-trigger {
+    color: #535862;
+}
+
+.nav--theme-switch.nav--light .nav__link:hover,
+.nav--theme-switch.nav--light .nav__link.is-active,
+.nav--theme-switch.nav--light .nav__dropdown-trigger:hover {
+    color: #181d27;
+}
+
+.nav--theme-switch.nav--light .nav__mobile-toggle {
+    color: #181d27;
+}
+
+/* Active link styling for theme-switch nav (no underline) */
+
+/* Mobile Navigation for theme-switch */
+.nav--theme-switch .nav__mobile {
+    background-color: var(--color-bg-primary);
+}
+
+.nav--theme-switch.nav--light .nav__mobile {
+    background-color: #ffffff;
+}
+
+.nav--theme-switch.nav--light .nav__mobile .nav__link {
+    color: #535862;
+    border-bottom-color: #e9eaeb;
+}
+
+.nav--theme-switch.nav--light .nav__mobile .nav__link:hover {
+    color: #181d27;
+}
+
 .nav__inner {
     display: flex;
     align-items: center;
@@ -490,9 +591,14 @@
     color: var(--color-text-primary);
 }
 
-.nav__mobile-toggle svg {
+.nav__mobile-toggle svg,
+.nav__mobile-icon {
     width: 24px;
     height: 24px;
+}
+
+.nav__mobile-icon--close {
+    display: none;
 }
 
 /* Mobile Navigation */
